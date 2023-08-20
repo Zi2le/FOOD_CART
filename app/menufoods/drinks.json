@@ -1,0 +1,129 @@
+[
+        {
+                "id" : 0,
+                "img" :"/images/drink-1.jpg",
+                "name":"Lemonade juice",
+                "ingredients":"water,lemon",
+                "price":1290,
+                "blurImage": "images/blur-drink-1.jpg"
+
+        },  
+        {
+                "id" : 1,
+                "img" :"/images/drink-2.jpg",
+                "name":"Pineapple Juice",
+                "ingredients":"Pineapple, water",
+                "price":1490,
+                "blurImage": "images/blur-drink-2.jpg"
+
+        }, 
+        {
+                "id" : 2,
+                "img" :"/images/dessert-2.jpg",
+                "name":"creamfruitt",
+                "ingredients":"water,lemon",
+                "price":1390,
+                "blurImage": "images/blur-dessert-2.jpg"
+
+        }, 
+        {
+                "id" : 3,
+                "img" :"/images/wine-3.jpg",
+                "name":"grape juice",
+                "ingredients":"water,lemon",
+                "price":1900,
+                "blurImage": "images/blur-wine-3.jpg"
+
+        },
+        {
+                "id" : 4,
+                "img" :"/images/drink-4.jpg",
+                "name":"Xan beer",
+                "ingredients":"water,lemon",
+                "price":1407,
+                "blurImage": "images/blur-drink-4.jpg"
+
+        }, 
+        {
+                "id" : 5,
+                "img" :"/images/drink-5.jpg",
+                "name":"apple juice",
+                "ingredients":"water,lemon",
+                "price":1250,
+                "blurImage": "images/blur-drink-5.jpg"
+
+        }, 
+        {
+                "id" : 6,
+                "img" :"/images/drink-6.jpg",
+                "name":"berry & lemon juice",
+                "ingredients":"water,lemon",
+                "price":4290,
+                "blurImage": "images/blur-drink-6.jpg"
+
+        }, 
+        {
+                "id" : 7,
+                "img" :"/images/drink-7.jpg",
+                "name":"Glass juice",
+                "ingredients":"water,lemon",
+                "price":3290,
+                "blurImage": "images/blur-drink-7.jpg"
+
+        }, 
+        {
+                "id" : 8,
+                "img" :"/images/drink-8.jpg",
+                "name":"peach juice",
+                "ingredients":"water,lemon",
+                "price":2990,
+                "blurImage": "images/blur-drink-8.jpg"
+
+        }, 
+        {
+                "id" : 9,
+                "img" :"/images/drink-9.jpg",
+                "name":"creamy tea",
+                "ingredients":"water,lemon",
+                "price":2090,
+                "blurImage": "images/blur-drink-9.jpg"
+
+        }, 
+        {
+                "id" : 10,
+                "img" :"/images/drink-3.jpg",
+                "name":"soda drink",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+                "price":1490,
+                "blurImage": "images/blur-drink-3.jpg"
+
+        }, 
+        {
+                "id" : 11,
+                "img" :"/images/wine-2.jpg",
+                "name":"Penser nature",
+                "ingredients":"water,lemon",
+                "price":1370,
+                "blurImage": "images/blur-wine-2.jpg"
+
+        },
+       
+        {
+                "id" : 12,
+                "img" :"/images/wine-4.jpg",
+                "name":"W.&J",
+                "ingredients":"water,lemon",
+                "price":1280,
+                "blurImage": "images/blur-wine-4.jpg"
+
+        },
+        {
+                "id" : 13,
+                "img" :"/images/wine-5.jpg",
+                "name":"grape wine",
+                "ingredients":"water,lemon",
+                "price":1210,
+                "blurImage": "images/blur-wine-5.jpg"
+
+        }
+]

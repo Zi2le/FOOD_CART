@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,23 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+.lin-grad{
+  background:linear-gradient( 180deg, rgba(146, 145, 145, 0.073) -59.06%, #EFB60E 65.85%);
+  filter: blur(10px);
+  transform: rotateX(30deg);
+    }
+
+.swiper-container::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }    
+
+.im{
+      transform: scale(1) ;
+      transition: 0.8s;
+  }
+.im:hover,
+.im:focus{
+    transform: scale(1.05) ;
 }

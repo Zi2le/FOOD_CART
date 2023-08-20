@@ -1,0 +1,118 @@
+[ 
+       
+        {
+                "id" : 0,
+                "img" :"/images/foods26.jpg",
+                "name":"xan oats",
+                "ingredients":"oats,banana and more",
+                "price":1200,
+                "blurImage": "images/blur-foods26.jpg"
+        },
+        {
+              
+                "id" : 1,
+                "img" :"/images/foods17.jpg",
+                "name":"Grilled Caesar salad",
+                "ingredients":"Grilled Caesar salad, shaved reggiano",
+                "price":1500,
+                "blurImage": "images/blur-foods17.jpg"
+        },
+        {
+                "id" : 2,
+                "img" :"/images/foods18.jpg",
+                "name":"Seared ahi tuna fillet*",
+                "ingredients":"Seared ahi tuna fillet*, honey-ginger sauce",
+                "price":1700,
+                "blurImage": "images/blur-foods18.jpg"
+        },
+        {
+                "id" : 3,
+                "img" :"/images/foods20.jpg",
+                "name":"Bacon wrapped wild gulf prawns",
+                "ingredients":"Bacon wrapped wild gulf prawns",
+                "price":1800,
+                "blurImage": "images/blur-foods20.jpg"
+        },
+        {
+                "id" : 4,
+                "img" :"/images/foods21.jpg",
+                "name":"Spicy Calamari and beans",
+                "ingredients":"Spicy Calamari and beans",
+                "price":1200,
+                "blurImage": "images/blur-foods21.jpg"
+        },
+        {
+                "id" : 5,
+                "img" :"/images/foods19.jpg",
+                "name":"jollof spag with meatball",
+                "ingredients":"meat, flour,spag",
+                "price":1200,
+                "blurImage": "images/blur-foods19.jpg"
+        },
+        {
+                "id" : 6,
+                "img" :"/images/foods22.jpg",
+                "name":"Greek Salad",
+                "ingredients":"A delicate crab cake served on a toasted roll with lettuce and tartar sauce",
+                "price":1200,
+                "blurImage": "images/blur-foods22.jpg"
+        },
+        {
+                "id" : 7,
+                "img" :"/images/foods23.jpg",
+                "name":"Lobster Bisque",
+                "ingredients":"Lorem, deren, trataro, filede, nerada",
+                "price":1800,
+                "blurImage": "images/blur-foods23.jpg"
+        },
+        {
+                "id" : 8,
+                "img" :"/images/foods24.jpg",
+                "name":"Caesar Selections",
+                "ingredients":"Lorem, deren, trataro, filede, nerada",
+                "price":1200,
+                "blurImage": "images/blur-foods24.jpg"
+        },
+        {
+                "id" : 9,
+                "img" :"/images/foods25.jpg",
+                "name":"Bread Barrel",
+                "ingredients":"Lorem, deren, trataro, filede, nerada",
+                "price":1900,
+                "blurImage": "images/blur-foods25.jpg"
+        },
+        {
+                "id" : 10,
+                "img" :"/images/foods16.png",
+                "name":"Yam and potato porridge",
+                "ingredients":"yam,potato",
+                "price":1200,
+                "blurImage": "images/blur-foods16.jpg"
+        },
+        {
+                "id" : 11,
+                "img" :"/images/foods27.jpg",
+                "name":"Beef Roast Source",
+                "ingredients":"Meat, Potatoes, Rice, Tomatoe",
+                "price":10000,
+                "blurImage": "images/blur-foods27.jpg"
+        },
+         {
+                "id" : 12,
+                "img" :"/images/foods28.jpg",
+                "name":"Steak",
+                "ingredients":"Meat, vegetables, Tomatoe",
+                "price":12000,
+                "blurImage": "images/blur-foods28.jpg"
+        },
+        {
+
+                "id" : 13,
+                "img" :"/images/foods29.jpg",
+                "name":"xan dish",
+                "ingredients":"Meat,bread and more",
+                "price":1200,
+                "blurImage": "images/blur-foods29.jpg"
+        }
+        
+]

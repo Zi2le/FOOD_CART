@@ -1,0 +1,475 @@
+[
+
+        {
+                "id" : 0,
+                "img" :"/images/foods26.jpg",
+                "name":" xan oats",
+                "ingredients":"oats,banana and more",
+                "price":1200,
+                "blurImage": "images/blur-foods26.jpg"
+        },
+        {
+              
+                "id" : 1,
+                "img" :"/images/foods17.jpg",
+                "name":"Grilled Caesar salad",
+                "ingredients":"Grilled Caesar salad, shaved reggiano",
+                "price":1500,
+                "blurImage": "images/blur-foods17.jpg"
+        },
+        {
+                "id" : 2,
+                "img" :"/images/foods18.jpg",
+                "name":"Seared ahi tuna fillet*",
+                "ingredients":"Seared ahi tuna fillet*, honey-ginger sauce",
+                "price":1700,
+                "blurImage": "images/blur-foods18.jpg"
+        },
+        {
+                "id" : 3,
+                "img" :"/images/foods20.jpg",
+                "name":"Bacon wrapped wild gulf prawns",
+                "ingredients":"Bacon wrapped wild gulf prawns",
+                "price":1800,
+                "blurImage": "images/blur-foods20.jpg"
+        },
+        {
+                "id" : 4,
+                "img" :"/images/foods21.jpg",
+                "name":"Spicy Calamari and beans",
+                "ingredients":"Spicy Calamari and beans",
+                "price":1200,
+                "blurImage": "images/blur-foods21.jpg"
+        },
+        {
+                "id" : 5,
+                "img" :"/images/foods19.jpg",
+                "name":"jollof spag with meatball",
+                "ingredients":"meat, flour,spag",
+                "price":1200,
+                "blurImage": "images/blur-foods19.jpg"
+        },
+        {
+                "id" : 6,
+                "img" :"/images/foods22.jpg",
+                "name":"Greek Salad",
+                "ingredients":"A delicate crab cake served on a toasted roll with lettuce and tartar sauce",
+                "price":1200,
+                "blurImage": "images/blur-foods22.jpg"
+        },
+        {
+                "id" : 7,
+                "img" :"/images/foods23.jpg",
+                "name":"Lobster Bisque",
+                "ingredients":"Lorem, deren, trataro, filede, nerada",
+                "price":1800,
+                "blurImage": "images/blur-foods23.jpg"
+        },
+        {
+                "id" : 8,
+                "img" :"/images/foods24.jpg",
+                "name":"Caesar Selections",
+                "ingredients":"Lorem, deren, trataro, filede, nerada",
+                "price":1200,
+                "blurImage": "images/blur-foods24.jpg"
+        },
+        {
+                "id" : 9,
+                "img" :"/images/foods25.jpg",
+                "name":"Bread Barrel",
+                "ingredients":"Lorem, deren, trataro, filede, nerada",
+                "price":1900,
+                "blurImage": "images/blur-foods25.jpg"
+        },
+        {
+                "id" : 10,
+                "img" :"/images/foods16.png",
+                "name":"Yam and potato porridge",
+                "ingredients":"yam,potato",
+                "price":1200,
+                "blurImage": "images/blur-foods16.jpg"
+        },
+        {
+                "id" : 11,
+                "img" :"/images/foods27.jpg",
+                "name":"Beef Roast Source",
+                "ingredients":"Meat, Potatoes, Rice, Tomatoe",
+                "price":10000,
+                "blurImage": "images/blur-foods27.jpg"
+        },
+         {
+                "id" : 12,
+                "img" :"/images/foods28.jpg",
+                "name":"Steak",
+                "ingredients":"Meat, vegetables, Tomatoe",
+                "price":12000,
+                "blurImage": "images/blur-foods28.jpg"
+        },
+        {
+
+                "id" : 13,
+                "img" :"/images/foods29.jpg",
+                "name":"xan dish",
+                "ingredients":"Meat,bread and more",
+                "price":1200,
+                "blurImage": "images/blur-foods29.jpg"
+        },
+        {
+                "id" : 14,
+                "img" :"/images/drink-1.jpg",
+                "name":"Lemonade juice",
+                "ingredients":"water,lemon",
+                "price":1290,
+                "blurImage": "images/blur-drink-1.jpg"
+
+        },  
+        {
+                "id" : 15,
+                "img" :"/images/drink-2.jpg",
+                "name":"Pineapple Juice",
+                "ingredients":"Pineapple, water",
+                "price":1490,
+                "blurImage": "images/blur-drink-2.jpg"
+
+        }, 
+        {
+                "id" : 16,
+                "img" :"/images/dessert-2.jpg",
+                "name":"creamfruitt",
+                "ingredients":"water,lemon",
+                "price":1390,
+                "blurImage": "images/blur-dessert-2.jpg"
+
+        }, 
+        {
+                "id" : 17,
+                "img" :"/images/wine-3.jpg",
+                "name":"grape juice",
+                "ingredients":"water,lemon",
+                "price":1900,
+                "blurImage": "images/blur-wine-3.jpg"
+
+        },
+        {
+                "id" : 18,
+                "img" :"/images/drink-4.jpg",
+                "name":"Xan beer",
+                "ingredients":"water,lemon",
+                "price":1407,
+                "blurImage": "images/blur-drink-4.jpg"
+
+        }, 
+        {
+                "id" : 19,
+                "img" :"/images/drink-5.jpg",
+                "name":"apple juice",
+                "ingredients":"water,lemon",
+                "price":1250,
+                "blurImage": "images/blur-drink-5.jpg"
+
+        }, 
+        {
+                "id" : 20,
+                "img" :"/images/drink-6.jpg",
+                "name":"berry & lemon juice",
+                "ingredients":"water,lemon",
+                "price":4290,
+                "blurImage": "images/blur-drink-6.jpg"
+
+        }, 
+        {
+                "id" : 21,
+                "img" :"/images/drink-7.jpg",
+                "name":"Glass juice",
+                "ingredients":"water,lemon",
+                "price":3290,
+                "blurImage": "images/blur-drink-7.jpg"
+
+        }, 
+        {
+                "id" : 22,
+                "img" :"/images/drink-8.jpg",
+                "name":"peach juice",
+                "ingredients":"water,lemon",
+                "price":2990,
+                "blurImage": "images/blur-drink-8.jpg"
+
+        }, 
+        {
+                "id" : 23,
+                "img" :"/images/drink-9.jpg",
+                "name":"creamy tea",
+                "ingredients":"water,lemon",
+                "price":2090,
+                "blurImage": "images/blur-drink-9.jpg"
+
+        }, 
+        {
+                "id" : 24,
+                "img" :"/images/drink-3.jpg",
+                "name":"soda drink",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.",
+                "price":1490,
+                "blurImage": "images/blur-drink-3.jpg"
+
+        }, 
+        {
+                "id" : 25,
+                "img" :"/images/wine-2.jpg",
+                "name":"Penser nature",
+                "ingredients":"water,lemon",
+                "price":1370,
+                "blurImage": "images/blur-wine-2.jpg"
+
+        },
+        {
+                "id" : 26,
+                "img" :"/images/wine-4.jpg",
+                "name":"W.&J",
+                "ingredients":"water,lemon",
+                "price":1280,
+                "blurImage": "images/blur-wine-4.jpg"
+
+        },
+        {
+                "id" : 27,
+                "img" :"/images/wine-5.jpg",
+                "name":"grape wine",
+                "ingredients":"water,lemon",
+                "price":1210,
+                "blurImage": "images/blur-wine-5.jpg"
+
+        },
+        {
+                "id" : 28,
+                "img" :"/images/snacks18.jpg",
+                "name":"Paris raspberry pastry",
+                "ingredients":"Berries,dough,cream",
+                "price":2200,
+                "blurImage": "images/blur-snacks18.jpg"
+        },
+        {
+                "id" : 29,
+                "img" :"/images/snacks15.jpg",
+                "name":"Pastry with sugar and raspberries",
+                "ingredients":"Berries,dough",
+                "price":1290,
+                "blurImage": "images/blur-snacks15.jpg"
+
+        }, 
+        {
+                "id" : 30,
+                "img" :"/images/snacks1.jpg",
+                "name":"Raspberry cream waffle",
+                "ingredients":"Berries,dough,cream",
+                "price":1200,
+                "blurImage": "images/blur-snacks1.jpg"
+        },
+        {
+                "id" : 31,
+                "img" :"/images/snacks6.jpg",
+                "name":"xan burger",
+                "ingredients":"Smokey BBQ chicken wings",
+                "price":1200,
+                "blurImage": "images/blur-snacks6.jpg"
+        },
+        {
+                "id" : 32,
+                "img" :"/images/snacks16.jpg",
+                "name":"Piles of pancake with honey",
+                "ingredients":"flour,egg,honey,sugar,milk",
+                "price":3200,
+                "blurImage": "images/blur-snacks16.jpg"
+        }, 
+        {
+                "id" : 33,
+                "img" :"/images/snacks14.jpg",
+                "name":"xan burger2",
+                "ingredients":"Grilled buns,lettuces,meat",
+                "price":1200,
+                "blurImage": "images/blur-snacks14.jpg"
+        },
+        {
+                "id" : 34,
+                "img" :"/images/snacks7.jpg",
+                "name":"Italian Pizza",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1700,
+                "blurImage": "images/blur-snacks7.jpg"
+        },
+        {
+                "id" : 35,
+                "img" :"/images/snacks8.jpg",
+                "name":"Greek Pizza",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1200,
+                "blurImage": "images/blur-snacks8.jpg"
+        },
+        {
+                "id" : 36,
+                "img" :"/images/snacks9.jpg",
+                "name":"American Pizza",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1900,
+                "blurImage": "images/blur-snacks9.jpg"
+        },
+        {
+                "id" : 37,
+                "img" :"/images/snacks10.jpg",
+                "name":"Margherita",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1000,
+                "blurImage": "images/blur-snacks10.jpg"
+        },
+        {
+                "id" : 38,
+                "img" :"/images/snacks11.png",
+                "name":"Ultimate Overload",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1100,
+                "blurImage": "images/blur-snacks11.png"
+        },
+        {
+                "id" : 39,
+                "img" :"/images/snacks12.jpg",
+                "name":"Ham & Pineapple",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1200,
+                "blurImage": "images/blur-snacks12.jpg"
+        },
+        {
+                "id" : 40,
+                "img" :"/images/snacks5.png",
+                "name":"French toast with bluberries",
+                "ingredients":"",
+                "price":1200,
+                "blurImage": "images/blur-snacks5.png"
+        },
+        {
+                "id" : 41,
+                "img" :"/images/snacks13.jpg",
+                "name":"xan burger1",
+                "ingredients":"Buns,lettuces,meat",
+                "price":1200,
+                "blurImage": "images/blur-snacks13.jpg"
+        },
+        { 
+                "id":42,
+                "img" :"/images/foods30.jpg",
+                "name": "Calulu",
+                "ingredients":"fish or shrimps, and vegetables like eggplants, okra, onions, tomatoes and sweet potato leaves.",
+                "price":1008,
+                "blurImage": "images/blur-foods30.png"
+        },
+        {
+                "id" : 43,
+                "img" :"/images/dinner-6.jpg",
+                "name":"xan dish1",
+                "ingredients":"Meat,bread and more",
+                "price":1200,
+                "blurImage": "images/blur-dinner-6.jpg"
+        },        
+        {
+                "id" : 44,
+                "img" :"/images/foods31.jpg",
+                "name":"Mechouia Salad",
+                "ingredients":"chopped tomatoes, peppers and onions, which are given flavor with salt, pepper, olive oil and olives.",
+                "price":1850,
+                "blurImage": "images/blur-foods31.jpg"
+        },
+        {
+                "id" : 45,
+                "img" :"/images/foods5.png",
+                "name":"Salmon Soup",
+                "ingredients":"Meal with salmon and zucchini",
+                "price":1200,
+                "blurImage": "images/blur-foods5.png"
+        },
+        {
+                "id" : 46,
+                "img" :"/images/foods6.png",
+                "name":"Chicken salad",
+                "ingredients":"Chicken,vegetables,mayo ...",
+                "price":1280,
+                "blurImage": "images/blur-foods6.png"
+        },
+        {
+                "id" : 47,
+                "img" :"/images/foods7.png",
+                "name":"Egusi and pounded yam",
+                "ingredients":"egusi soup,yam,pepper,and vegetable",
+                "price":1210,
+                "blurImage": "images/blur-foods7.png"
+        },
+        {
+                "id" : 48,
+                "img" :"/images/foods8.png",
+                "name":"Spicy chicken",
+                "ingredients":"spices,chicken,pepper",
+                "price":1200,
+                "blurImage": "images/blur-foods8.png"
+        },
+        {
+                "id" : 49,
+                "img" :"/images/foods10.png",
+                "name":"Grilled chicken and sauce",
+                "ingredients":"spices,chicken,mayo",
+                "price":1900,
+                "blurImage": "images/blur-foods10.png"
+        },
+        {
+                "id" : 50,
+                "img" :"/images/foods11.png",
+                "name":"Bowl of ramen soup",
+                "ingredients":"flour,soup",
+                "price":100,
+                "blurImage": "images/blur-foods11.png"
+        },
+        {
+                "id" : 51,
+                "img" :"/images/foods12.png",
+                "name":"Burger with french fries aerial",
+                "ingredients":"Bread,fries,meat,vegetables",
+                "price":900,
+                "blurImage": "images/blur-foods12.png"
+        },
+        {
+                "id" : 52,
+                "img" :"/images/foods13.png",
+                "name":"Seafood Okra",
+                "ingredients":"Fully loaded seafood okra. Served with choice of swallow.",
+                "price":1200,
+                "blurImage": "images/blur-foods13.png"
+        }, 
+        {
+                "id" : 53,
+                "img" :"/images/foods15.png",
+                "name":"assorted chicken",
+                "ingredients":"Chicken and spices",
+                "price":10200,
+                "blurImage": "images/blur-foods15.png"
+        },
+        {
+                "id" : 54,
+                "img" :"/images/drink-10.jpg",
+                "name":"lime juice",
+                "ingredients":"water,lime",
+                "price":1500,
+                "blurImage": "images/blur-drink-10.jpg"
+        },
+        {
+                "id" : 55,
+                "img" :"/images/dinner-1.jpg",
+                "name":"Chickenveg",
+                "ingredients":"chicken, vegetables",
+                "price":800,
+                "blurImage": "images/blur-dinner-1.jpg"
+        },
+        {        "id" : 56,
+                "img" :"/images/foods39.jpg",
+                "name": "Eggbre",
+                "ingredients":"tomatoes, dough and more..",
+                "price":3500,
+                "blurImage": "images/blur-foods39.jpg"
+        }
+]

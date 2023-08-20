@@ -1,0 +1,116 @@
+[ 
+        {
+                "id" : 0,
+                "img" :"/images/snacks18.jpg",
+                "name":"Paris raspberry pastry",
+                "ingredients":"Berries,dough,cream",
+                "price":2200,
+                "blurImage": "images/blur-snacks18.jpg"
+        },
+        {
+                "id" : 1,
+                "img" :"/images/snacks15.jpg",
+                "name":"Pastry with sugar and raspberries",
+                "ingredients":"Berries,dough",
+                "price":1290,
+                "blurImage": "images/blur-snacks15.jpg"
+
+        }, 
+        {
+                "id" : 2,
+                "img" :"/images/snacks1.jpg",
+                "name":"Raspberry cream waffle",
+                "ingredients":"Berries,dough,cream",
+                "price":1200,
+                "blurImage": "images/blur-snacks1.jpg"
+        },
+        {
+                "id" : 3,
+                "img" :"/images/snacks6.jpg",
+                "name":"xan burger",
+                "ingredients":"Smokey BBQ chicken wings",
+                "price":1200,
+                "blurImage": "images/blur-snacks6.jpg"
+        },
+        {
+                "id" : 4,
+                "img" :"/images/snacks16.jpg",
+                "name":"Piles of pancake with honey",
+                "ingredients":"flour,egg,honey,sugar,milk",
+                "price":3200,
+                "blurImage": "images/blur-snacks16.jpg"
+        }, 
+        {
+                "id" : 5,
+                "img" :"/images/snacks14.jpg",
+                "name":"xan burger2",
+                "ingredients":"Grilled buns,lettuces,meat",
+                "price":1200,
+                "blurImage": "images/blur-snacks14.jpg"
+        },
+        {
+                "id" : 6,
+                "img" :"/images/snacks7.jpg",
+                "name":"Italian Pizza",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1700,
+                "blurImage": "images/blur-snacks7.jpg"
+        },
+        {
+                "id" : 7,
+                "img" :"/images/snacks8.jpg",
+                "name":"Greek Pizza",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1200,
+                "blurImage": "images/blur-snacks8.jpg"
+        },
+        {
+                "id" : 8,
+                "img" :"/images/snacks9.jpg",
+                "name":"American Pizza",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1900,
+                "blurImage": "images/blur-snacks9.jpg"
+        },
+        {
+                "id" : 9,
+                "img" :"/images/snacks10.jpg",
+                "name":"Margherita",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1000,
+                "blurImage": "images/blur-snacks10.jpg"
+        },
+        {
+                "id" : 10,
+                "img" :"/images/snacks11.png",
+                "name":"Ultimate Overload",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1100,
+                "blurImage": "images/blur-snacks11.png"
+        },
+        {
+                "id" : 11,
+                "img" :"/images/snacks12.jpg",
+                "name":"Ham & Pineapple",
+                "ingredients":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
+                "price":1200,
+                "blurImage": "images/blur-snacks12.jpg"
+        },
+        {
+                "id" : 12,
+                "img" :"/images/snacks5.png",
+                "name":"French toast with bluberries",
+                "ingredients":"",
+                "price":1200,
+                "blurImage": "images/blur-snacks5.png"
+        },
+        {
+                "id" : 13,
+                "img" :"/images/snacks13.jpg",
+                "name":"xan burger1",
+                "ingredients":"Buns,lettuces,meat",
+                "price":1200,
+                "blurImage": "images/blur-snacks13.jpg"
+        }
+       
+]
