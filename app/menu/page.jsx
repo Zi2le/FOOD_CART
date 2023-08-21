@@ -55,10 +55,10 @@ const menupage = () => {
   const shadow = {
   boxShadow : '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
   }
-  const hadow = {
-    boxShadow: '0px 30px 60px 0px rgba(57, 57, 57, 0.10)'
-
-  }
+  const containerStyle = {
+    backgroundColor: '#F9F9F9',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+  };
   const text = {
     textShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
     color: 'black',
@@ -67,7 +67,7 @@ const menupage = () => {
   const menus = menu.map(menu => (
     <SwiperSlide key={menu.id}>
     <Link href={`productdetails/${menu.id}`}>
-     <div className='shadow-[#EFEEEE] bg-white mb-20 rounded-[30px]  items md:w-[345px] md:h-[360px] flex-shrink-0 relative mt-16 shadow-2xl  w-full h-[300px]'>
+     <div className=' bg-[#FFF] mb-20 rounded-[30px]  items md:w-[345px] md:h-[360px] flex-shrink-0 relative mt-16 border-[#EFEEEE] border-[1.5px] w-full h-[300px]' style={containerStyle }>
       <div className='relative bottom-[50px] flex justify-center '>
         <Image src={menu.img} width={270}  height={270} alt='pictures of food from different sites and a little from ris' className='rounded-full w-[200px] h-[200px] border-[13px]' placeholder='blur' blurDataURL={menu.blurImage}/>
         </div>
@@ -80,7 +80,7 @@ const menupage = () => {
      </SwiperSlide>
   ))
   return (
-    <div className='min-w-[100%] min-h-screen  relative z-10'> 
+    <div className='min-w-[100%] min-h-screen  relative z-10 '> 
       <div className={`${ismenu ? ' xan ' : 'opacity-0'} h-full w-[70%]  bg-[#FFC83A] absolute top-0 z-20 flex flex-col justify-between  pl-3`} style={xan}>
         <div className='pt-10 pl-4'>
         <LuChevronLeft className={` ${ismenu ? 'close' : ''}flex-shrink-0 w-[24px] h-[24px] `} onClick={open} style={close}/>
@@ -160,9 +160,9 @@ const menupage = () => {
     <Link href='/sauce'><p>Sauce</p></Link>
    </div>
    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
-   <div className='mt-[45px] space-x-10 flex container swiper-wrapper md:ml-10 justify-center '>
+   <div className='mt-[45px] space-x-10 flex md:ml-10'>
    <Swiper
-   spaceBetween={25}
+   spaceBetween={40}
     scrollbar={{ draggable: true }}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
@@ -171,7 +171,7 @@ const menupage = () => {
     </Swiper>
     </div> 
 
-<div className='mt-10 flex absolute bottom-4  w-full h-[40px] z-20 bg-white'>
+<div className='mt-10 flex absolute bottom-4  w-full h-[40px] z-20'>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>
