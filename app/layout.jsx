@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className='xl:h-screen xl:flex xl:justify-center xl:items-center' style={theb}>
+        <div className='xl:h-screen xl:flex xl:justify-center xl:items-center text-white' style={theb}>
         <p className='text-[0px] xl:text-[30px] xl:flex xl:justify-center xl:font-extrabold xl:capitalize'>use a smaller screen</p>
         </div>
         <div className='shadow-2xl min-w-[360px] min-h-screen sm:w-[100%] 
