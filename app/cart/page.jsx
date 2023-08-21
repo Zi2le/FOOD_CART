@@ -1,11 +1,10 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import Reverse from '../reverse/page'
-import {cart} from '../drinkdetails/[slug]/page'
 
 
-const pcart = ({cart}) => {
+
+const pcart = () => {
 
   return (
     <div className='min-w-[100%] min-h-screen px-10 pt-10'>

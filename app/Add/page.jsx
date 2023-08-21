@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 
 
@@ -15,4 +16,4 @@ const useCart = () => {
   return { cartItems, addToCart, removeFromCart };
 }
 
-export default useCart;
+// export default useCart;
