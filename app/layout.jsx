@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <div className='shadow-2xl min-w-[360px] min-h-screen sm:w-[100%] 
         sm:h-[100%] md:w-[100%] md:h-[100%] lg:w-[100%] lg:h-[100%]
-         xl:hidden 2xl:hidden bg-grey overflow-hidden'>
+         xl:hidden 2xl:hidden overflow-hidden'>
         {children}
         </div>
         </body>
