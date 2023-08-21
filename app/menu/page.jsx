@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {FiShoppingCart, FiHeart, FiUser} from 'react-icons/fi'
@@ -12,24 +12,15 @@ import {IoShieldHalf} from 'react-icons/io5'
 import {BsArrowRight} from 'react-icons/bs'
 import  menu  from '../menufoods/menu.json'
 import Link from 'next/link'
-import 'swiper/swiper-bundle.min.css'
-import {Swiper} from 'swiper'
+import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/react'
 export let menuJson = []
 menuJson = menu.slice()
 
 const menupage = () => {
-  const [cart, Setcart] = useState([])
+
   // const [random, setRandom] = useState([''])
-  useEffect(() => {
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    })
-  }, [])
+
 
     // const randomItems = () =>{
     //   const Plain = JSON.parse(menu)
@@ -74,19 +65,19 @@ const menupage = () => {
     }
    
   const menus = menu.map(menu => (
+    <SwiperSlide key={menu.id}>
     <Link href={`productdetails/${menu.id}`}>
-    <Fragment key={menu.id}>
-     <div className='bg-[#FFF] mb-20 rounded-[30px]  items md:w-[345px] md:h-[360px] flex-shrink-0 relative mt-16 swiper-slide' style={{ ...hadow, width: '235px', height: '280px' }}>
+     <div className='shadow-[#EFEEEE] bg-white mb-20 rounded-[30px]  items md:w-[345px] md:h-[360px] flex-shrink-0 relative mt-16 shadow-2xl  w-full h-[300px]'>
       <div className='relative bottom-[50px] flex justify-center '>
-        <Image src={menu.img} width={170}  height={170} alt='pictures of food from different sites and a little from ris' className='rounded-full w-[179px] h-[179px] border-[13px]' placeholder='blur' blurDataURL={menu.blurImage}/>
+        <Image src={menu.img} width={270}  height={270} alt='pictures of food from different sites and a little from ris' className='rounded-full w-[200px] h-[200px] border-[13px]' placeholder='blur' blurDataURL={menu.blurImage}/>
         </div>
        <div className='flex flex-col  mb-24'>
         <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{menu.name}</p>
         <p className='mt-3 text-center text-[#FFC83A] font-semiboldtext-[12px]'>{menu.price}</p>
       </div>
      </div>
-    </Fragment>
      </Link>
+     </SwiperSlide>
   ))
   return (
     <div className='min-w-[100%] min-h-screen  relative z-10'> 
@@ -143,7 +134,7 @@ const menupage = () => {
       {/* <div className=''>{cart.length}</div> */}
     </div>
    </div>
-   <div className='mt-10 ml-14 md:mt-[110px]'>
+   <div className='mt-10 ml-14 md:mt-[110px] ms:mt-2 '>
     <h2 className=' text-4xl font-bold' style={text}>
       Delicious 
     </h2>
@@ -161,7 +152,7 @@ const menupage = () => {
    </div>
    </div>
    </Link>
-   <div className='flex flex-col justify-evenly md:h-[60vh]'>
+   <div className='flex flex-col justify-evenly md:h-[60vh] '>
    <div className='flex space-x-16 mt-10 justify-center text-[#9A9A9D] text-[13px] items-center'>
    <Link href='/food'><p>Foods</p></Link>
    <Link href='/drinks'><p>Drinks</p></Link>
@@ -169,11 +160,18 @@ const menupage = () => {
     <Link href='/sauce'><p>Sauce</p></Link>
    </div>
    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
-   <div className='swiper-container flex flex-col overflow-auto overflow-x-auto scrollbar-none '>
-   <div className='mt-[45px] space-x-10 flex container swiper-wrapper ml-10'>{menus}</div> 
-   </div>
-   
-<div className='mt-10 flex absolute bottom-4  w-full h-[40px]'>
+   <div className='mt-[45px] space-x-10 flex container swiper-wrapper md:ml-10 justify-center '>
+   <Swiper
+   spaceBetween={25}
+    scrollbar={{ draggable: true }}
+    onSwiper={(swiper) => console.log(swiper)}
+    onSlideChange={() => console.log('slide change')}
+    >
+      {menus}
+    </Swiper>
+    </div> 
+
+<div className='mt-10 flex absolute bottom-4  w-full h-[40px] z-20 bg-white'>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>

@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <div className='xl:h-screen xl:flex xl:justify-center xl:items-center text-white' style={theb}>
         <p className='text-[0px] xl:text-[30px] xl:flex xl:justify-center xl:font-extrabold xl:capitalize'>use a smaller screen</p>
         </div>
-        <div className='shadow-2xl min-w-[360px] min-h-screen sm:w-[100%] 
+        <div className='overflow-hidden shadow-2xl min-w-[360px] min-h-full sm:w-[100%] 
         sm:h-[100%] md:w-[100%] md:h-[100%] lg:w-[100%] lg:h-[100%]
          xl:hidden 2xl:hidden'>
         {children}

@@ -40,7 +40,7 @@ const packard = () => {
    </div>
   
     <div className='mt-7 pb-3 flex justify-center md:min-h-[15vh] md:items-end'>
-    <Link href='/login'> <button className='bg-[#FFFFFF] py-4 px-32 rounded-[30px] text-[rgb(255,199,56)]'>
+    <Link href='/signup'> <button className='bg-[#FFFFFF] py-4 px-32 rounded-[30px] text-[rgb(255,199,56)]'>
       Get started
     </button> </Link>
     </div>
