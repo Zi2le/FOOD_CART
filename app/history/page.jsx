@@ -4,7 +4,7 @@ import Reverse from '../reverse/page'
 
 const history = () => {
   return (
-    <div className='min-w-[100%] min-h-screen relative '>
+    <div className='min-w-[100%] h-screen relative '>
          <div className='flex w-[100%] justify-center items-center pt-7'>
                 <div>
                 <Reverse/>  
@@ -13,7 +13,7 @@ const history = () => {
                   <h3 className='text-center text-[18px] leading-normal font-semibold'>History</h3>      
                 </div>
         </div>
-        <div className='h-[90vh]'>
+        <div >
         <div className='flex flex-col justify-center  h-[70vh]  items-center mt-10'>
                 <div>
                 <MdOutlineEventNote className='h-[118.333px] w-[120.5px] flex-shrink-0 fill-[#C7C7C7] ' />  

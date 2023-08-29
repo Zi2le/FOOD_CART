@@ -21,38 +21,36 @@ function haubmit(e){
         sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
       };
   return (
-    <div className='relative min-w-[100%] min-h-screen bg-[#F2F2F2]'>
-        <div className=' relative h-[329px] w-full rounded-b-[30px] bg-[#FFFFFF] shadow-2xl shadow-white'>
-     <div className='flex flex-col justify-center items-center'>
-        <div className='mt-20'>
+    <div className='relative min-w-[100%] h-screen bg-[#F2F2F2]  z-0'>
+        <div className=' relative  w-full rounded-b-[30px]  bg-[#FFFFFF] shadow-2xl shadow-white h-[30%] flex flex-col justify-between'>
+        <div className='flex justify-center items-center'>
                 <Image src={img6} height={331} width={250} alt='aptech logo'/>
         </div>
-        <div className='flex absolute  bottom-0 space-x-20 '>
-          <Link href='/login'><p className='  py-3 w-[134px] text-center text-lg font-semibold'>Login</p></Link> 
-           <Link href='/sign-up'><p className='border-b-[#EFB60E] border-b-[3px] py-3 w-[134px] text-center text-lg font-semibold'>Sign-up</p></Link> 
+        <div className='flex  justify-evenly md:justify-evenly md:items-end'>
+          <Link href='/login'><p className='  py-3 w-[100px] text-center text-lg font-semibold md:text-[25px] md:w-[200px]'>Login</p></Link> 
+           <Link href='/sign-up'><p className='border-b-[#EFB60E] border-b-[3px] py-3 w-[100px] md:w-[200px] text-center text-lg font-semibold md:text-[25px]'>Sign-up</p></Link> 
         </div>
-     </div>
         </div>
-        <form  className='md:mt-40'>
-        <div  className='flex flex-col  items-center ml-10 mt-16 space-y-8 md:mr-5 '>
+        <form  className='md:mt-40 pb-4 w-full '>
+        <div  className='flex flex-col  items-center  mt-16 space-y-8 md:mr-5  h-[55%] md:space-y-12'>
                 <div className='flex flex-col space-y-2'>
-                <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4] '>Full name</label>
-                <input type="text" name="full" id="full" className='outline-none bg-transparent w-[290px] placeholder:text-[black] text-[17px] md:w-[314px] md border-b border-black py-2'placeholder='onaopemipoojedokun'  onChange={(e) => setName(e.target.value)} />
+                <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4] md:text-[21px] '>Full name</label>
+                <input type="text" name="full" id="full" className='outline-none bg-transparent w-[290px] placeholder:text-[black] md:placeholder:text-[20px] text-[17px] md:w-[500px] md border-b border-black py-2'placeholder='onaopemipoojedokun'  onChange={(e) => setName(e.target.value)} />
                 </div>
 
                 <div className='flex flex-col justify-center space-y-2'>
                         <label htmlFor="mail">Email</label>
-                        <input type="email" name="mail" id="mail" className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px]  md:w-[314px] border-black border-b py-2' placeholder='onaopemipoojedokun@gmail.com'  onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" name="mail" id="mail" className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] md:placeholder:text-[20px]  md:w-[500px] border-black border-b py-2' placeholder='onaopemipoojedokun@gmail.com'  onChange={(e) => setEmail(e.target.value)} />
 
                 </div>
                     <div className='flex flex-col'>
                         <label htmlFor="pass" className='text-[15px] font-semibold opacity-[0.4] '>Password</label>
-                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] border-black border-b py-2  md:w-[314px]' type="password" name="pass" id="pass" placeholder='********'  onChange={(e) => setPassword(e.target.value)} />
+                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] border-black border-b py-2  md:w-[500px] md:placeholder:text-[20px]' type="password" name="pass" id="pass" placeholder='********'  onChange={(e) => setPassword(e.target.value)} />
                         </div>
                 </div>
        
-          <div className='flex items-center mt-24 justify-center'>
-            <Link href='/login'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px] ' onClick={handleSignUp}>Sign up</button></Link>    
+          <div className='flex items-center  justify-center bottom-0 absolute z-10 w-full h-[15%] '>
+            <Link href='/login'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px] md:w-[400px] md:h-[106px] md:rounded-[56px] md:text-[19px]' onClick={handleSignUp}>Sign up</button></Link>    
           </div>
         </form>
         </div>

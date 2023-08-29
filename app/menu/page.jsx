@@ -18,7 +18,37 @@ export let menuJson = []
 menuJson = menu.slice()
 
 const menupage = () => {
-
+  const [slidesPerView, setSlidesPerView] = useState(3)
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+    const newSlidesPerView =
+      screenWidth < 768
+        ? 2
+        : screenWidth < 1024
+        ? 3
+        : 4;
+  
+    setSlidesPerView(newSlidesPerView);
+    
+    const handleResize = () => {
+      const newSlidesPerView =
+        window.innerWidth < 768
+          ? 2
+          : window.innerWidth < 1024
+          ? 3
+          : 4;
+  
+      setSlidesPerView(newSlidesPerView);
+    };
+  
+    handleResize(); // Set initial value on component mount
+  
+    window.addEventListener('resize', handleResize);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   // const [random, setRandom] = useState([''])
 
 
@@ -67,9 +97,12 @@ const menupage = () => {
   const menus = menu.map(menu => (
     <SwiperSlide key={menu.id}>
     <Link href={`productdetails/${menu.id}`}>
-     <div className=' bg-[#FFF] mb-20 rounded-[30px]  items md:w-[345px] md:h-[360px] flex-shrink-0 relative mt-16 border-[#EFEEEE] border-[1.5px] w-full h-[300px]' style={containerStyle }>
+     <div className=' bg-[#FFF] mb-20 rounded-[30px] items md:w-[305px] md:h-[360px] flex-shrink-0 relative mt-16 border-[#EFEEEE] border-[1.5px] w-[250px] h-[270px] sm:opacity-0 sm:w-0 sm:h-0' style={containerStyle }>
       <div className='relative bottom-[50px] flex justify-center '>
-        <Image src={menu.img} width={270}  height={270} alt='pictures of food from different sites and a little from ris' className='rounded-full w-[200px] h-[200px] border-[13px]' placeholder='blur' blurDataURL={menu.blurImage}/>
+        <Image src={menu.img} width={270}  height={270}
+         alt='pictures of food from different sites and a little from ris'
+         priority
+          className='rounded-full  sm:w-[90px] sm:h-[90px] w-[200px] h-[200px] border-[13px]' placeholder='blur' blurDataURL={menu.blurImage}/>
         </div>
        <div className='flex flex-col  mb-24'>
         <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{menu.name}</p>
@@ -80,7 +113,7 @@ const menupage = () => {
      </SwiperSlide>
   ))
   return (
-    <div className='min-w-[100%] min-h-screen  relative z-10 '> 
+    <div className='min-w-[100%] relative z-10 h-screen'> 
       <div className={`${ismenu ? ' xan ' : 'opacity-0'} h-full w-[70%]  bg-[#FFC83A] absolute top-0 z-20 flex flex-col justify-between  pl-3`} style={xan}>
         <div className='pt-10 pl-4'>
         <LuChevronLeft className={` ${ismenu ? 'close' : ''}flex-shrink-0 w-[24px] h-[24px] `} onClick={open} style={close}/>
@@ -147,7 +180,7 @@ const menupage = () => {
     <button type="submit" className='relative border py-4 px-3 text-[17px] font-semibold opacity-50'>Search</button>
     </div>
     <div>
-   <LuSearch  className=' h-[18px] w-[18px]  text-[#000000] text-center'/>
+   <LuSearch  className='h-[18px] w-[18px]  text-[#000000] text-center'/>
    </div>
    </div>
    </div>
@@ -157,12 +190,12 @@ const menupage = () => {
    <Link href='/food'><p>Foods</p></Link>
    <Link href='/drinks'><p>Drinks</p></Link>
    <Link href='/snacks'><p>Snacks</p></Link> 
-    <Link href='/sauce'><p>Sauce</p></Link>
    </div>
    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
    <div className='mt-[45px] space-x-10 flex md:ml-10'>
    <Swiper
-   spaceBetween={40}
+    slidesPerView={slidesPerView}
+   spaceBetween={50}
     scrollbar={{ draggable: true }}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
@@ -171,7 +204,7 @@ const menupage = () => {
     </Swiper>
     </div> 
 
-<div className='mt-10 flex absolute bottom-4  w-full h-[40px] z-20'>
+<div className='mt-10 flex absolute bottom-4  w-full h-[40px] z-20 '>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>

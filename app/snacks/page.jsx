@@ -81,7 +81,6 @@ const pmenu = () => {
    <Link href='/food'> <p>Foods</p></Link>
    <Link href='/drinks'><p>Drinks</p></Link>
 <Link href='/snacks'><p className='text-[#FFC83A] cursor-pointer border-b-[2.6px] border-[#FFC83A] pb-2 w-[68px] text-center'>Snacks</p></Link> 
-<Link href='/sauce'><p>Sauce</p></Link>
    </div>
    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
    <div className='swiper-container flex flex-col overflow-auto overflow-x-auto mt-6'>

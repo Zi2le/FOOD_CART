@@ -25,7 +25,7 @@ const page = () => {
 
  
   return (
-<div className='min-w-[100%] min-h-screen px-14 pt-8 text-[#000000] relative'>
+<div className='min-w-[100%] h-screen px-14 pt-8 text-[#000000] relative'>
 <div className='md:min-h-[90vh]'>
  <div className='flex justify-between items-center min-w-[100%]'>
 <div>

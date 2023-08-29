@@ -100,11 +100,10 @@ useEffect(() => {
    </div>
    </Link>
    <div className='flex flex-col justify-evenly md:h-[60vh]'>
-   <div className='flex space-x-16 mt-10  justify-center text-[#9A9A9D] text-[13px]'>
-   <Link href='/food'><p className='text-[#FFC83A] cursor-pointer border-b-[2.4px] border-[#FFC83A] pb-2 w-[68px] text-center'>Foods</p></Link>
+   <div className='flex space-x-16 mt-10  justify-center text-[#9A9A9D] text-[13px] w-full'>
+   <Link href='/food'><p className='text-[#FFC83A] cursor-pointer border-b-[2.4px] border-[#FFC83A] pb-2 w-[68px] text-center '>Foods</p></Link>
    <Link href='/drinks'><p>Drinks</p></Link>
    <Link href='/snacks'><p>Snacks</p></Link> 
-    <Link href='/sauce'><p>Sauce</p></Link>
    </div>
    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
    <div className='swiper-container flex flex-col mt-10 overflow-auto overflow-x-auto'>

@@ -8,19 +8,19 @@ import imag4 from '../public/images/image4.png'
 
 const packard = () => {
   return (
-  <div className='bg-[#EFB60E] flex flex-col justify-center min-w-[100%] min-h-screen relative'>
-    <div className='md:min-h-[90vh]'>
-    <div className='flex flex-col justify-center md:items-center md:mb-16'>
-      <div className='ml-20 mt-7'>
+  <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-screen relative pt-[1.5px] z-0'>
+    <div className='flex flex-col justify-center md:items-center md:mb-16 h-[30%] '>
+      <div className='ml-20 '>
    <Image src={imag1} alt='aptech logo '/>
    </div>
-   <div className='text-center -mt-8'>
-   <h2 className=' text-[65px] text-[#FFFFFF] font-extrabold'>Food for <br /> <span className='ml-10'>Everyone</span></h2>
+   <div className='flex flex-col justify-center items-center -mt-8 '>
+   <h2 className='text-[60px] md:text-[90px] text-justify text-[#FFFFFF] font-extrabold'>Food for <br /> </h2>
+   <h2 className='text-[60px] md:text-[90px] text-justify text-[#FFFFFF] font-extrabold'>Everyone</h2>
    </div>
  </div>
-  <div className='relative mt-14 md:flex md:justify-evenly'>
+  <div className='relative  md:flex  h-[50%] flex flex-col justify-center md:justify-normal md:w-full'>
     <div className='flex ml-6'>
-    <div className='flex flex-col'>
+    <div className='flex flex-col md:w-[50%] md:justify-center md:items-center'>
     <div className='mt-20 ml-16'>
    <Image src={imag3} width={175} height={144} alt="pizza"/>
    </div>
@@ -28,8 +28,8 @@ const packard = () => {
    <Image src={imag2} alt="burger"/>
    </div> 
    </div>
-   <div className='flex relative'>
-   <div className=' mr-6 mb-2'>
+   <div className='flex relative md:w-[50%]'>
+   <div className=' mr-6 mb-2 md:flex md:justify-end md:items-end '>
    <Image src={imag4} alt='boy'/>
    </div>
    {/* <div className='bg-[#EFB60E] bg-opacity-80 backdrop-filter backdrop-blur-[2px] z-10 h-[90px] w-full absolute bottom-[4px] border-black border-2'></div> */}
@@ -39,12 +39,11 @@ const packard = () => {
    </div>
    </div>
   
-    <div className='mt-7 pb-3 flex justify-center md:min-h-[15vh] md:items-end'>
-    <Link href='/signup'> <button className='bg-[#FFFFFF] py-4 px-32 rounded-[30px] text-[rgb(255,199,56)]'>
+    <div className=' pb-3 absolute bottom-0 w-full  h-[20%] z-10  flex flex-col justify-end items-center'>
+    <Link href='/sign-up'> <button className='py-[20px] text-[rgb(255,199,56)] rounded-[30px] md:h-[10px] px-[100px] md:px-[200px] md:py-[40px] md:text-[24px]  text-justify bg-[#FFFFFF]'>
       Get started
     </button> </Link>
     </div>
-   </div>
   </div>
   )
 }

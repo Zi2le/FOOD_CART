@@ -82,7 +82,6 @@ const menudrink = () => {
    <Link href='/food'> <p>Foods</p></Link>
     <Link href='/drinks'><p className='text-[#FFC83A] cursor-pointer border-b-[2px] border-[#FFC83A] pb-2 w-[68px] text-center'>Drinks</p></Link>
     <Link href='/snacks'><p>Snacks</p></Link>
-    <Link href='/sauce'><p>Sauce</p></Link>
    </div>
    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
    <div className='swiper-container flex flex-col overflow-auto overflow-x-auto mt-5'>
