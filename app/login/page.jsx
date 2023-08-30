@@ -22,7 +22,7 @@ function handleSubmit(e){
 
   return (
     <div className='  relative min-w-[100%] h-screen bg-[#F2F2F2]'>
-        <div className='relative  w-full rounded-b-[30px]  bg-[#FFFFFF] shadow-2xl shadow-white h-[30%] flex flex-col justify-between'>
+        <div className='relative  w-full rounded-b-[30px]  bg-[#FFFFFF] shadow-2xl shadow-white h-[25%%] flex flex-col justify-between'>
         <div className='flex justify-center items-center'>
                 <Image src={img6} height={331} width={250} alt='aptech logo' />
         </div>
@@ -48,7 +48,7 @@ function handleSubmit(e){
                 </div>
         </div>
      
-        <div className='flex items-center pb-3 justify-center w-full absolute bottom-0'>
+        <div className='flex items-center pb-3 justify-center w-full absolute bottom-3'>
             <Link href='/menu'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px] md:text-[22px] ' onClick={handleLogin}>Login</button></Link>    
           </div>
         </form>
