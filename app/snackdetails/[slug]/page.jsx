@@ -1,10 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Reverse from '../../reverse/page'
 import {FiHeart} from 'react-icons/fi'
 import { snackJson } from '../../snacks/page'
 import Image from 'next/image'
 import Link from 'next/link'
+// import { useRouter } from 'next/navigation'
 import { useParams } from 'next/navigation'
 
 
@@ -19,6 +20,16 @@ const ris={
   transform:"translateY(-50%)"
 }
 const page = () => {
+
+// const router = useRouter()
+// const [menuname, setMenuname] = useState('')
+// const [image, setImage] = useState('')
+// const [price, setPrice] = useState()
+
+// const AddToCart = () =>{
+// const items = {menuname, image, price}
+// sessionStorage.setItem('items', JSON.stringify(items))
+// }
   const params = useParams()
   //  console.log(params)
   const breads = snackJson.find((bread) => bread.id == params.slug)
@@ -67,7 +78,7 @@ const page = () => {
 </div>
 <Link href='/cart'>
 <div className='mt-10 pb-3 flex justify-center md:min-h-[22vh] md:items-end'>
-  <button className='w-[314px] h-[70px] rounded-[30px] bg-[#FFC83A] '>
+  <button className='w-[314px] h-[70px] rounded-[30px] bg-[#FFC83A] ' onClick={AddToCart}>
   Add to cart
   </button>
 </div>

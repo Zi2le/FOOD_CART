@@ -34,12 +34,12 @@ function handleSubmit(e){
         <form  className=' pb-4 w-full flex flex-col justify-center mt-5  md:h-[50vh]'>
         <div  className='flex flex-col justify-center items-center  mt-16 space-y-8 md:mr-5 h-[65%] md:space-y-20'>
                 <div className='flex flex-col space-y-2'>
-                        <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4]  md:text-[25px]'>Email address</label>
-                        <input className='outline-none bg-transparent w-[314px] placeholder:text-[black] text-[17px] md:placeholder:text-[22px]  border-b border-black py-2  md:w-[500px]' type="email" name="em" id="email" placeholder='onaopemipoojedokun@gmail.com' onChange={(e) => setEmail(e.target.value)} />
+                        <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4] md:text-[22px]'>Email address</label>
+                        <input className='outline-none bg-transparent w-[314px] placeholder:text-[black] text-[17px] md:placeholder:text-[20px]  border-b border-black py-2  md:w-[500px]' type="email" name="em" id="email" placeholder='onaopemipoojedokun@gmail.com' onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className='flex flex-col space-y-2'>
-                        <label htmlFor="pass" className='text-[15px] font-semibold opacity-[0.4] md:text-[25px]'>Password</label>
-                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[314px] border-black md:placeholder:text-[22px] border-b py-2  md:w-[500px]' type="password" name="pass" id="pass" placeholder='********' onChange={(e) => setPassword(e.target.value)}  />
+                        <label htmlFor="pass" className='text-[15px] font-semibold opacity-[0.4] md:text-[22px]'>Password</label>
+                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[314px] border-black md:placeholder:text-[20px] border-b py-2  md:w-[500px]' type="password" name="pass" id="pass" placeholder='********' onChange={(e) => setPassword(e.target.value)}  />
                         <div  className='pt-3 '>
                       <p className='text-[#FF0000] text-base text-semibold'>
                         Forgot password ?
@@ -48,8 +48,8 @@ function handleSubmit(e){
                 </div>
         </div>
      
-        <div className='flex items-center pb-3 justify-center w-full absolute bottom-3'>
-            <Link href='/menu'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px] md:text-[22px] ' onClick={handleLogin}>Login</button></Link>    
+        <div className='flex items-center pb-[1.5px] justify-center w-full absolute bottom-0'>
+            <Link href='/menu'><button type="submit" className='rounded-[30px] font-semibold bg-[#FFC83A] w-[314px] h-[70px] md:text-[22px] ' onClick={handleLogin}>Login</button></Link>    
           </div>
         </form>
         </div>

@@ -21,7 +21,7 @@ function haubmit(e){
         sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
       };
   return (
-    <div className='relative min-w-[100%] h-screen bg-[#F2F2F2]  z-0'>
+    <div className='relative min-w-[100%] h-screen bg-[#F2F2F2]'>
         <div className=' relative  w-full rounded-b-[30px]  bg-[#FFFFFF] shadow-2xl shadow-white h-[30%] flex flex-col justify-between'>
         <div className='flex justify-center items-center'>
                 <Image src={img6} height={331} width={250} alt='aptech logo'/>
@@ -31,8 +31,8 @@ function haubmit(e){
            <Link href='/sign-up'><p className='border-b-[#EFB60E] border-b-[3px] py-3 w-[100px] md:w-[200px] text-center text-lg font-semibold md:text-[25px]'>Sign-up</p></Link> 
         </div>
         </div>
-        <form  className='md:mt-40 pb-4 w-full '>
-        <div  className='flex flex-col  items-center  mt-16 space-y-8 md:mr-5  h-[55%] md:space-y-12'>
+        <form  className='md:mt-32 pb-4 w-full'>
+        <div  className='flex flex-col  items-center  mt-10 space-y-8 md:mr-5  h-[55%] md:space-y-6'>
                 <div className='flex flex-col space-y-2'>
                 <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4] md:text-[21px] '>Full name</label>
                 <input type="text" name="full" id="full" className='outline-none bg-transparent w-[290px] placeholder:text-[black] md:placeholder:text-[20px] text-[17px] md:w-[500px] md border-b border-black py-2'placeholder='onaopemipoojedokun'  onChange={(e) => setName(e.target.value)} />
@@ -49,8 +49,8 @@ function haubmit(e){
                         </div>
                 </div>
        
-          <div className='flex items-center  justify-center bottom-0 absolute z-10 w-full h-[15%] '>
-            <Link href='/login'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px] md:w-[400px] md:h-[106px] md:rounded-[56px] md:text-[19px]' onClick={handleSignUp}>Sign up</button></Link>    
+          <div className='flex items-center justify-center bottom-0 absolute  w-full'>
+            <Link href='/login'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px]  md:rounded-[56px] md:text-[22px] font-semibold' onClick={handleSignUp}>Sign up</button></Link>    
           </div>
         </form>
         </div>

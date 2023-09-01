@@ -8,7 +8,7 @@ import imag4 from '../public/images/image4.png'
 
 const packard = () => {
   return (
-  <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-screen relative pt-[1.5px] z-0'>
+  <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-screen relative pt-[1.5px] '>
     <div className='flex flex-col justify-center md:items-center md:mb-16 h-[30%] '>
       <div className='ml-20 '>
    <Image src={imag1} alt='aptech logo '/>
@@ -39,7 +39,7 @@ const packard = () => {
    </div>
    </div>
   
-    <div className=' pb-3 absolute bottom-0 w-full  h-[20%] z-10  flex flex-col justify-end items-center'>
+    <div className='absolute bottom-0 w-full  h-[20%]  flex flex-col justify-end items-center '>
     <Link href='/sign-up'> <button className='py-[20px] text-[rgb(255,199,56)] rounded-[30px] md:h-[10px] px-[100px] md:px-[200px] md:py-[40px] md:text-[24px]  text-justify bg-[#FFFFFF]'>
       Get started
     </button> </Link>
