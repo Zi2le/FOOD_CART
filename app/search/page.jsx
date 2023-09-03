@@ -21,9 +21,10 @@ const search = () => {
 
   }
 
-  const Allmenus = menu.filter((menu)=>{
-    return search.toLowerCase() === '' ? menu : menu.name.toLowerCase().includes(search)
-  }).map(menu =>(
+  const Allmenus = menu.filter((menu) => {
+    const searchTerm = search.toLowerCase()
+    return searchTerm === '' ? true : menu.name.toLowerCase().includes(searchTerm)
+  }).map(menu => (
     <Link href={`productdetails/${menu.id}`}>
     <Fragment key ={menu.id}>
   <div className='bg-[#FFF] mb-20 rounded-[30px] w-[160px] h-[237px]  md:w-[250px] md:h-[280px] items flex-shrink-0 relative mt-16 ' style={hadow }>
@@ -49,7 +50,7 @@ const search = () => {
      <input type="text" name="search" id="search"  value={search} onChange={handleChange} className='w-[180px] h-[29px] bg-[#F5F5F8]  text-center' placeholder='Search'/>
      </div>
      </div>
-     <div className='min-h-[90vh] rounded-t-[30px] w-full bg-[#F9F9F9]'>
+     <div className='min-h-[90vh] rounded-t-[30px] w-full'>
       {/* {Allmenus.length === 0 &&(
          <div className='flex flex-col items-center justify-center'>
           <div>

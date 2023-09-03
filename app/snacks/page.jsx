@@ -7,7 +7,7 @@ import {TiHome} from 'react-icons/ti'
 import {MdHistory} from 'react-icons/md'
 import snack from '../menufoods/snacks/snacks.json'
 import Link from 'next/link'
-import Navbar from '../swip/page'
+import Navbar from '../swipe/page'
 import 'swiper/swiper-bundle.min.css'
 import Swiper from 'swiper'
 export let snackJson = []

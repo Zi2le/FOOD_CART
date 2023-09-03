@@ -8,7 +8,7 @@ import {TiHome} from 'react-icons/ti'
 import {MdHistory} from 'react-icons/md'
 import food from '../menufoods/food.json'
 import Link from 'next/link'
-import Navbar from '../swip/page'
+import Navbar from '../swipe/page'
 import Swiper from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 
