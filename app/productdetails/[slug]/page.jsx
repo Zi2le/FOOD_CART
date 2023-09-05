@@ -6,6 +6,7 @@ import { menuJson } from '../../menu/page'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 
 // function  fooddetails(params){
@@ -19,10 +20,23 @@ const ris={
   transform:"translateY(-50%)"
 }
 const page = () => {
+  const router = useRouter()
   const params = useParams()
   // console.log(params)
   const foods = menuJson.find((food) => food.id == params.slug)
-  
+  const AddToCart = () =>{
+    const newItems = {
+      name:foods.name, 
+      img:foods.img,
+      price:foods.price,
+    }
+    
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+    cart.push(newItems)
+    localStorage.setItem("cart", JSON.stringify(cart))
+    
+    router.push("/cart")
+    }
  
   return (
 <div className='min-w-[100%] min-h-screen px-14 pt-8 text-[#000000] relative'>
@@ -67,7 +81,7 @@ const page = () => {
 </div>
 <Link href='/cart'>
 <div className='mt-10 pb-3 flex justify-center md:min-h-[22vh] md:items-end'>
-  <button className='w-[314px] h-[70px] rounded-[30px] bg-[#FFC83A]'>
+  <button className='w-[314px] h-[70px] rounded-[30px] bg-[#FFC83A]' onClick={AddToCart}>
   Add to cart
   </button>
 </div>

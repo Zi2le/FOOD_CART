@@ -5,7 +5,7 @@ import {FiHeart} from 'react-icons/fi'
 import { snackJson } from '../../snacks/page'
 import Image from 'next/image'
 import Link from 'next/link'
-// import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useParams } from 'next/navigation'
 
 
@@ -20,20 +20,28 @@ const ris={
   transform:"translateY(-50%)"
 }
 const page = () => {
+ const router = useRouter()
 
-// const router = useRouter()
-// const [menuname, setMenuname] = useState('')
-// const [image, setImage] = useState('')
-// const [price, setPrice] = useState()
+ const params = useParams()
+ //  console.log(params)
+ const breads = snackJson.find((bread) => bread.id == params.slug)
+ 
 
-// const AddToCart = () =>{
-// const items = {menuname, image, price}
-// sessionStorage.setItem('items', JSON.stringify(items))
-// }
-  const params = useParams()
-  //  console.log(params)
-  const breads = snackJson.find((bread) => bread.id == params.slug)
-  
+
+const AddToCart = () =>{
+const newItems = {
+  name:breads.name, 
+  img:breads.img,
+  price:breads.price,
+}
+
+  const cart = JSON.parse(localStorage.getItem("cart")) || []
+cart.push(newItems)
+localStorage.setItem("cart", JSON.stringify(cart))
+
+router.push("/cart")
+}
+ 
  
   return (
 <div className='min-w-[100%] min-h-screen px-14 pt-8 text-[#000000] relative'>

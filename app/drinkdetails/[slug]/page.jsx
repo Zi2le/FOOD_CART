@@ -6,6 +6,7 @@ import { drinkJson } from '../../drinks/page'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 
 
@@ -14,21 +15,24 @@ const ris={
   transform:"translateY(-50%)"
 }
 const page = () => {
+  const router = useRouter()
   const params = useParams()
    //console.log(params)
   const breads = drinkJson.find((bread) => bread.id == params.slug)
-const useart = () => {
-  const [cart, Setcart] = useState([])
-const addItem = (breads) => {
+  const AddToCart = () =>{
+    const newItems = {
+      name:breads.name, 
+      img:breads.img,
+      price:breads.price,
+    }
+    
+    const cart = JSON.parse(localStorage.getItem("cart")) || []
+    cart.push(newItems)
+    localStorage.setItem("cart", JSON.stringify(cart))
+    
+    router.push("/cart")
+    }
 
-console.log(
-  'abeg, please work😩😩😩😩😩'
-)
-Setcart([...cart, breads])
-
-}
-return {cart, addItem }
-}
   return (
 <div className='min-w-[100%] min-h-screen px-14 pt-8 text-[#000000] relative'>
   <div className='md:min-h-[90vh]'>
@@ -72,7 +76,7 @@ return {cart, addItem }
 </div>
 <Link href='/cart'>
 <div className='mt-10 pb-3 flex justify-center md:min-h-[22vh] md:items-end'>
-  <button className='w-[314px] h-[70px] rounded-[30px] bg-[#FFC83A]' onClick={() => addItem(breads)}>
+  <button className='w-[314px] h-[70px] rounded-[30px] bg-[#FFC83A]' onClick={AddToCart}>
   Add to cart
   </button>
 </div>

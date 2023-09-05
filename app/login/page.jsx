@@ -35,11 +35,11 @@ function handleSubmit(e){
         <div  className='flex flex-col justify-center items-center  mt-16 space-y-8 md:mr-5 h-[65%] md:space-y-20'>
                 <div className='flex flex-col space-y-2'>
                         <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4] md:text-[22px]'>Email address</label>
-                        <input className='outline-none bg-transparent w-[314px] placeholder:text-[black] text-[17px] md:placeholder:text-[20px]  border-b border-black py-2  md:w-[500px]' type="email" name="em" id="email" placeholder='onaopemipoojedokun@gmail.com' onChange={(e) => setEmail(e.target.value)} />
+                        <input className='outline-none bg-transparent w-[314px] placeholder:text-[black] text-[17px] md:placeholder:text-[20px]  border-b border-black py-2  md:w-[500px]' autocomplete="email" type="email" name="em" id="email" placeholder='onaopemipoojedokun@gmail.com' onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className='flex flex-col space-y-2'>
                         <label htmlFor="pass" className='text-[15px] font-semibold opacity-[0.4] md:text-[22px]'>Password</label>
-                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[314px] border-black md:placeholder:text-[20px] border-b py-2  md:w-[500px]' type="password" name="pass" id="pass" placeholder='********' onChange={(e) => setPassword(e.target.value)}  />
+                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[314px] border-black md:placeholder:text-[20px] border-b py-2  md:w-[500px]' autocomplete="off" type="password" name="pass" id="pass" placeholder='********' onChange={(e) => setPassword(e.target.value)}  />
                         <div  className='pt-3 '>
                       <p className='text-[#FF0000] text-base text-semibold'>
                         Forgot password ?
