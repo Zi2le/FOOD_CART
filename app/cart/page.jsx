@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 import Reverse from '../reverse/page'
 import Image from 'next/image'
 const cart = () => {
-  const RetrieveCartitems = JSON.parse(localStorage.getItem("cart")) || []
+  const RetrieveCartitems = typeof localStorage !== 'undefined' ? (localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : []) : []
   const [count, setCount] = useState(1) 
   const [price, setPrice] = useState(0)
 
   const increment = () => {
    setCount(prevCount => prevCount + 1)
   }
-  const decreament = () => {
+  const decrement = () => {
    setCount(prevCount => prevCount - 1)
   }
 //         const [items, setItems] = useState({})
@@ -21,15 +21,15 @@ const cart = () => {
   return (
     <div className='h-screen bg-[#F5F5F8] relative'>
       <div className='h-[90%] '>
-      <div className='flex w-[100%] justify-center items-center fixed'>
+      <div className='flex w-[100%] justify-center items-center fixed bg-[grey]  h-[10%]'>
     <div>
     <Reverse/>  
     </div>
-    <div className='flex justify-center items-center w-[80%] '>
+    <div className='flex justify-center items-center w-[80%]'>
       <h3 className='text-center text-[18px] leading-normal font-semibold'>Cart</h3>      
     </div>
 </div>
-<div className='h-[100%] overflow-y-scroll pt-[28px] pb-1'>
+<div className='h-[100%] overflow-y-scroll pt-[20%] pb-2'>
       {RetrieveCartitems.map((item, index) =>(
          <div key={index} className='flex flex-col rounded-[20px] w-full mt-4 justify-center items-center'>
           <div className='flex w-[90%] h-[102px] bg-[#FFF]'>
@@ -43,7 +43,7 @@ const cart = () => {
         </div>
         <div className=' w-[18%] flex items-end pr-1'>
           <div className='bg-[#FFC83A] rounded-[30px] flex h-[25%] justify-evenly w-[97%]'>
-          <button type="button" onClick={decreament}>-</button>
+          <button type="button" onClick={decrement}>-</button>
           <p >{count}</p>
           <button type="button" onClick={increment}>+</button>
           </div>
