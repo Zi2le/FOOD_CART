@@ -48,7 +48,7 @@ function handleSubmit(e){
                 </div>
         </div>
      
-        <div className='flex items-center pb-[1.5px] justify-center w-full absolute bottom-0'>
+        <div className='flex items-center pb-[1.5px] justify-center w-full fixed bottom-1'>
             <Link href='/menu'><button type="submit" className='rounded-[30px] font-semibold bg-[#FFC83A] w-[314px] h-[70px] md:text-[22px] ' onClick={handleLogin}>Login</button></Link>    
           </div>
         </form>

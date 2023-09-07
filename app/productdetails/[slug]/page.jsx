@@ -35,7 +35,7 @@ const page = () => {
     cart.push(newItems)
     localStorage.setItem("cart", JSON.stringify(cart))
     
-    router.push("/cart")
+    router.push("/menu")
     }
  
   return (

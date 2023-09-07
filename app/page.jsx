@@ -39,7 +39,7 @@ const packard = () => {
    </div>
    </div>
   
-    <div className='absolute bottom-0 w-full  h-[20%]  flex flex-col justify-end items-center '>
+    <div className='fixed bottom-1 w-full  h-[20%]  flex flex-col justify-end items-center '>
     <Link href='/sign-up'> <button className='py-[20px] text-[rgb(255,199,56)] rounded-[30px] md:h-[10px] px-[100px] md:px-[200px] md:py-[40px] md:text-[24px]  text-justify bg-[#FFFFFF]'>
       Get started
     </button> </Link>

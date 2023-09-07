@@ -20,7 +20,7 @@ boxShadow : '0px 10px 40px 0px rgba(0, 0, 0, 0.03)'
 }       
 
   return (
-    <div className='px-10 bg-[#F5F5F8] min-w-[100%] min-h-screen'>
+    <div className='px-10 bg-[#F5F5F8] min-w-[100%] h-screen'>
         <div className='pt-10'>
         <Reverse/>
         </div>
@@ -33,8 +33,8 @@ boxShadow : '0px 10px 40px 0px rgba(0, 0, 0, 0.03)'
                         change
                 </p>
         </div>
-        <div className=' mt-5 flex  w-full justify-center  md:justify-start' >
-                <div className='flex justify-center space-y-4 items-center  bg-[#FFF] w-[315px] h-[197px] rounded-[20px] space-x-2 md:w-[60%]' style={shade}>
+        <div className=' flex  w-full justify-center' >
+                <div className='flex justify-center space-y-4 items-center  bg-[#FFF] h-[197px] rounded-[20px] space-x-2 w-[95%]' style={shade}>
                 <div className=' pl-3  '>
                         <div className='border-2 bg-zinc-800 w-[97px] h-[97px] rounded-[10px] flex justify-center'>
                         <Image src={alex} alt='Alexander'  width={92} height={92} className='w-[92px] h-[92px] flex-shrink-0 rounded-full  '/>
@@ -59,26 +59,26 @@ boxShadow : '0px 10px 40px 0px rgba(0, 0, 0, 0.03)'
                 </div>
                 </div>
         </div>
-        <div className='mt-16  flex flex-col min-h-[44vh] justify-evenly items-center '>    
-                <div className='w-[315px] h-[60px] bg-[#FFF] rounded-[20px] flex  justify-between items-center px-3 im md:w-[75%]' style={shade}>
+        <div className='flex flex-col min-h-[44vh] justify-evenly items-center '>    
+                <div className=' h-[60px] bg-[#FFF] rounded-[20px] flex  justify-between items-center px-3 im w-[90%]' style={shade}>
                 <p className='text-[18px] font-semibold leading-normal'>
                 Orders
                 </p>
                 <LuChevronRight className='w-[24px] h-[24px] ' />
                 </div>
-                <div className='w-[315px] h-[60px] bg-[#FFF] rounded-[20px] flex justify-between items-center px-3 im md:w-[75%]' style={shade}>
+                <div className=' h-[60px] bg-[#FFF] rounded-[20px] flex justify-between items-center px-3 im w-[90%]' style={shade}>
                 <p className='text-[18px] font-semibold leading-normal'>
                 Pending reviews
                 </p>
                 <LuChevronRight  className='w-[24px] h-[24px] ' />
                 </div>
-                <div className='w-[315px] h-[60px] bg-[#FFF] rounded-[20px] flex justify-between items-center px-3 im md:w-[75%]' style={shade}>
+                <div className='w-[90%] h-[60px] bg-[#FFF] rounded-[20px] flex justify-between items-center px-3 im' style={shade}>
                 <p className='text-[18px] font-semibold leading-normal'>
                 Faq
                 </p>
                 <LuChevronRight className='w-[24px] h-[24px]'  />
                 </div>
-                <div className='w-[315px] h-[60px] bg-[#FFF] rounded-[20px] flex justify-between items-center px-3 im md:w-[75%]' style={shade}>
+                <div className='w-[90%] h-[60px] bg-[#FFF] rounded-[20px] flex justify-between items-center px-3 im ' style={shade}>
                 <p className='text-[18px] font-semibold leading-normal'>
                 Help
                 </p>

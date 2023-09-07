@@ -1,18 +1,19 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Reverse from '../reverse/page'
 import Image from 'next/image'
 const cart = () => {
-  const RetrieveCartitems = typeof localStorage !== 'undefined' ? (localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : []) : []
-  const [count, setCount] = useState(1) 
-  const [price, setPrice] = useState(0)
-
-  const increment = () => {
-   setCount(prevCount => prevCount + 1)
-  }
-  const decrement = () => {
-   setCount(prevCount => prevCount - 1)
-  }
+  // const [cartNo, setCartNo] = useState([]) 
+  // const [price, setPrice] = useState(0)
+  // useEffect(() => {
+    const retrieveCartitems = (typeof window !== 'undefined' && JSON.parse(localStorage.getItem("cart"))) || [];
+//  setCartNo(retrieveCartitems)
+  // const increment = () => {
+  //  setCount(prevCount => prevCount + 1)
+  // }
+  // const decrement = () => {
+  //  setCount(prevCount => prevCount - 1)
+  // }
 //         const [items, setItems] = useState({})
 //  useEffect(() =>{
 //         const RetrieveCartitems = JSON.parse(sessionStorage.getItem('items'))
@@ -21,7 +22,7 @@ const cart = () => {
   return (
     <div className='h-screen bg-[#F5F5F8] relative'>
       <div className='h-[90%] '>
-      <div className='flex w-[100%] justify-center items-center fixed bg-[grey]  h-[10%]'>
+      <div className='flex w-[100%] justify-center items-center fixed bg-[#E8EDF3]  h-[10%]'>
     <div>
     <Reverse/>  
     </div>
@@ -30,22 +31,22 @@ const cart = () => {
     </div>
 </div>
 <div className='h-[100%] overflow-y-scroll pt-[20%] pb-2'>
-      {RetrieveCartitems.map((item, index) =>(
+      {retrieveCartitems.map((item, index) =>(
          <div key={index} className='flex flex-col rounded-[20px] w-full mt-4 justify-center items-center'>
           <div className='flex w-[90%] h-[102px] bg-[#FFF]'>
                 {console.log(item.name)}
                 <div className='w-[30%]'>
               <Image  src={item.img} width={300} height={300} alt={item.name} className=' rounded-full w-[100px] h-[100px] flex-shrink-0 pl-1'/>  
               </div>
-              <div className='flex flex-col justify-center w-[52%]  pl-2'>
-       <p className=' text-[17px] font-semibold leading-normal'>{item.name}</p>
-       <p className='text-[15px] text-[#FFC83A] font-semibold leading-normal'> {price}</p>
+              <div className='flex flex-col justify-center w-[52%]  pl-3'>
+       <p className=' md:text-[17px] text-[12.7px] font-semibold leading-normal'>{item.name}</p>
+       <p className='text-[15px] text-[#FFC83A] font-semibold leading-normal'></p>
         </div>
-        <div className=' w-[18%] flex items-end pr-1'>
-          <div className='bg-[#FFC83A] rounded-[30px] flex h-[25%] justify-evenly w-[97%]'>
-          <button type="button" onClick={decrement}>-</button>
-          <p >{count}</p>
-          <button type="button" onClick={increment}>+</button>
+        <div className=' w-[18%] flex items-end pr-1 pb-2'>
+          <div className='bg-[#FFC83A] rounded-[30px] flex h-[25%] justify-evenly w-[97%] items-center'>
+          <button type="button">-</button>
+          <p className='text-[11.7px] md:text-[14px]'>fujn</p>
+          <button type="button">+</button>
           </div>
         </div>
         </div>
