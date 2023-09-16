@@ -63,16 +63,18 @@ const menupage = () => {
    
   const menus = menu.map(menu => (
     <Link href={`productdetails/${menu.id}`}>
-     <div className=' bg-[#FFF] mb-20 rounded-[30px] items md:w-[305px] md:h-[360px] flex-shrink-0 relative mt-16 border-[#EFEEEE] border-[1.5px] w-[250px] h-[270px] sm:opacity-0 sm:w-0 sm:h-0' style={containerStyle }>
-      <div className='relative bottom-[50px] flex justify-center '>
+     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[80%] w-[85%]'>
+      <div className='flex flex-col justify-center items-center w-[85%]'>
+      <div className='relative bottom-[50px] flex justify-center w-[80%]'>
         <Image src={menu.img} width={270}  height={270}
          alt='pictures of food from different sites and a little from ris'
          priority
-          className='rounded-full  sm:w-[90px] sm:h-[90px] w-[200px] h-[200px] border-[13px]' placeholder='blur' blurDataURL={menu.blurImage}/>
+          className='rounded-full  border-[13px] w-[70%] h-[70%] flex-shrink-0' placeholder='blur' blurDataURL={menu.blurImage}/>
         </div>
-       <div className='flex flex-col  mb-24'>
+       <div className='flex flex-col justify-between h-[30%]'>
         <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{menu.name}</p>
-        <p className='mt-3 text-center text-[#FFC83A] font-semiboldtext-[12px]'>{menu.price}</p>
+        <p className='text-center text-[#FFC83A] font-semiboldtext-[12px]'>{menu.price}</p>
+      </div>
       </div>
      </div>
      </Link>
@@ -123,51 +125,54 @@ const menupage = () => {
     <BsArrowRight className='w-[22px] flex-shrink-0' />
    </div>
     </div>
-   <div className='flex justify-between pt-10 px-7'>
+   <div className='flex justify-between items-center px-7 h-[10%]'>
+    <div>
     <RxHamburgerMenu className='w-[23.5px] h-[23.5px] md:h-[28px] md:w-[28px]' onClick={open}/> 
+    </div>
     <div className='flex'>
       <div>
       <Link href='/cart'>
       <div className='relative'>
         <FiShoppingCart className='relative w-[23.5px] h-[23.5px] md:h-[28px]  md:w-[28px] opacity-30 '/>
         </div>
-        <div className={` ${retrieveCartitems.length == 0 ? 'opacity-0':'opacity-100'} bg-[#FFC83A] rounded-full right-3 top-6 md:top-1 absolute h-[20px] w-[20px] md:w-[37px] md:h-[37px] flex justify-center items-center`}>
+        <div className={` ${retrieveCartitems.length == 0 ? 'opacity-0':'opacity-100'} bg-[#FFC83A] rounded-full right-[12px] top-[10px] md:top-2 absolute h-[20px] w-[20px] md:w-[37px] md:h-[37px] flex justify-center items-center`}>
         <span className='text-[10px] md:text-[17px]'>{retrieveCartitems.length}</span>
         </div>
         </Link>
     </div>
     </div>
    </div>
-   <div className='h-[30%]'>
-   <div className='mt-10 ml-14 md:mt-[110px] ms:mt-2 '>
-    <h2 className=' text-4xl font-bold' style={text}>
+   <div className='h-[35%] w-full '>
+   <div className='flex justify-center flex-col h-[37%] px-7' >
+    <h2 className='text-4xl font-bold' style={text}>
       Delicious 
     </h2>
-    <h2 className=' text-4xl font-bold' style={text}> food for you</h2>
+    <h2 className='text-4xl font-bold' style={text}> food for you</h2>
    </div>
-   <Link href='/search'>
-   <div className='flex justify-center md:mt-[56px]'>
-   <div className='relative flex mt-7 flex-row-reverse items-center w-[365px] h-[60px] bg-[#EFEEEE] space-x-5  backdrop-filter backdrop:blur-xl rounded-[30px]'>
-    <div className='mr-[230px]'>
-    <button type="submit" className='relative border py-4 px-3 text-[17px] font-semibold opacity-50'>Search</button>
+  <div className='w-full  h-[40%] flex justify-center items-center'>
+    <div className='flex w-[365px] h-[60px] bg-[#EFEEEE]  backdrop-filter backdrop:blur-xl rounded-[30px]' style={shadow}>
+      <div className='flex justify-center items-center w-[40%] '>
+      <div className='mr-2'>
+        <LuSearch className='h-[18px] w-[18px]  text-[#000000]'/>
+      </div>
+     <div>
+          <p className='text-[17px] font-semibold opacity-50'>Search</p>
+     </div>
+     </div>
     </div>
-    <div>
-   <LuSearch  className='h-[18px] w-[18px]  text-[#000000] text-center'/>
-   </div>
-   </div>
-   </div>
-   </Link>
-   <div className='flex flex-col justify-evenly md:h-[60vh] '>
-   <div className='flex space-x-16 mt-10 justify-center text-[#9A9A9D] text-[13px] items-center'>
+  </div>
+  <div className=' h-[23%] flex justify-center items-center w-full'>
+    <div className='flex space-x-16 justify-center text-[#9A9A9D] text-[15px] items-center w-full h-[60%]'>
    <Link href='/food'><p>Foods</p></Link>
    <Link href='/drinks'><p>Drinks</p></Link>
    <Link href='/snacks'><p>Snacks</p></Link> 
    </div>
    </div>
-   <div className='w-full bg-fuchsia-950 h-[50%] flex overflow-x-auto swiper-container space-x-8'>
+   </div> 
+   <div className='bg-fuchsia-950 swiper-container space-x-8  h-[45%] flex items-center overflow-x-scroll w-full'>
    {menus}
     </div> 
-<div className='mt-10 flex fixed bottom-1  w-full h-[10%]   bg-black'>
+<div className='flex fixed bottom-0  w-full h-[10%] justify-center items-center'>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>
@@ -188,7 +193,7 @@ const menupage = () => {
 </Link>
 </div>
 </div>
-</div>
+
     </div>
   )
 }

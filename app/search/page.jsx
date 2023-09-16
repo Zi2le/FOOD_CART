@@ -33,7 +33,7 @@ const search = () => {
       </div>
      <div className='flex flex-col  mb-24'>
       <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{menu.name}</p>
-      <p className='mt-3 text-center text-[#FFC83A] font-semiboldtext-[12px]'>{menu.price}</p>
+      <p className='mt-3 text-center text-[#FFC83A] font-semiboldtext-[12px]'>Rs {menu.price}</p>
     </div>
    </div>
       </Fragment>

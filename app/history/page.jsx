@@ -30,7 +30,7 @@ const history = () => {
                         </p>
                 </div>
         </div>
-        <div className='pb-3 flex justify-center md:min-h-[19vh] h-[15vh] items-end '>
+        <div className='pb-3 flex justify-center md:min-h-[19vh] h-[15vh] items-end fixed w-full'>
                 <button className='w-[314px] h-[70px]  flex-shrink-0 rounded-[30px] bg-[#FFC83A] text-center text-[17px] font-semibold leading-normal '>
                         Start ordering
                 </button>
