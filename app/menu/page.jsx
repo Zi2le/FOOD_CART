@@ -172,7 +172,7 @@ const menupage = () => {
    <div className='bg-fuchsia-950 swiper-container space-x-8  h-[45%] flex items-center overflow-x-scroll w-full'>
    {menus}
     </div> 
-<div className='flex fixed bottom-0  w-full h-[10%] justify-center items-center'>
+<div className='flex fixed bottom-1  w-full h-[10%] justify-center items-center'>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>
