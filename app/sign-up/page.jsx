@@ -50,7 +50,7 @@ function haubmit(e){
                         </div>
                 </div>
        
-          <div className='flex items-center justify-center w-full' >
+          <div className='flex items-center justify-center w-full  bottom-0 fixed'>
             <Link href='/login'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px]  md:rounded-[56px] md:text-[22px] font-semibold' onClick={handleSignUp}>Sign up</button></Link>    
           </div>
         </form>

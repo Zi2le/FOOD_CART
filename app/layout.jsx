@@ -17,11 +17,11 @@ const theb = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className='bg-[#F2F2F2]'>
         <div className='lg:h-screen lg:flex lg:justify-center lg:items-center text-white' style={theb}>
         <p className='text-[0px] lg:text-[30px] lg:flex lg:justify-center lg:font-extrabold lg:capitalize'>use a smaller screen</p>
         </div>
-        <div className=' overflow-x-hidden shadow-2xl min-w-[360px] min-h-full sm:w-[100%] 
+        <div className=' overflow-x-hidden  min-w-[360px] min-h-full sm:w-[100%] 
         sm:h-[100%] md:w-[100%] md:h-[100%] lg:hidden 
          xl:hidden 2xl:hidden'>
         {children}
