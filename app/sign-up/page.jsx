@@ -22,7 +22,7 @@ function haubmit(e){
         sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
       };
   return (
-    <div className='relative min-w-[100%] h-screen bg-[#F2F2F2]'>
+    <div className='relative min-w-[100%] h-[auto] bg-[#F2F2F2]'>
         <div className=' relative  w-full rounded-b-[30px]  bg-[#FFFFFF] shadow-2xl shadow-white h-[30%] flex flex-col justify-between'>
         <div className='flex justify-center items-center'>
                 <Image src={img6} height={331} width={250} alt='aptech logo'/>
