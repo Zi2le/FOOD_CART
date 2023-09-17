@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import img6 from '../../public/images/image1.png'
 
+
 const signuppage = () => {
 function haubmit(e){
  e.preventDefault() 
@@ -35,21 +36,21 @@ function haubmit(e){
         <div  className='flex flex-col  items-center  mt-10 space-y-8 md:mr-5  h-[55%] md:space-y-6'>
                 <div className='flex flex-col space-y-2'>
                 <label htmlFor="email" className='text-[15px] font-semibold opacity-[0.4] md:text-[21px] '>Full name</label>
-                <input type="text" name="full" id="full" className='outline-none bg-transparent w-[290px] placeholder:text-[black] md:placeholder:text-[20px] text-[17px] md:w-[500px] md border-b border-black py-2'placeholder='onaopemipoojedokun'  onChange={(e) => setName(e.target.value)} autocomplete="given-name"/>
+                <input type="text" name="full" id="full" className='outline-none bg-transparent w-[290px] placeholder:text-[black] md:placeholder:text-[20px] text-[17px] md:w-[500px] md border-b border-black py-2'placeholder='onaopemipoojedokun'  onChange={(e) => setName(e.target.value)} autoComplete="given-name"/>
                 </div>
 
                 <div className='flex flex-col justify-center space-y-2'>
                         <label htmlFor="mail">Email</label>
-                        <input type="email" name="mail" id="mail" className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] md:placeholder:text-[20px]  md:w-[500px] border-black border-b py-2' placeholder='onaopemipoojedokun@gmail.com'  onChange={(e) => setEmail(e.target.value)}autocomplete="off" />
+                        <input type="email" name="mail" id="mail" className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] md:placeholder:text-[20px]  md:w-[500px] border-black border-b py-2' placeholder='onaopemipoojedokun@gmail.com'  onChange={(e) => setEmail(e.target.value)}autoComplete="off" />
 
                 </div>
                     <div className='flex flex-col'>
                         <label htmlFor="pass" className='text-[15px] font-semibold opacity-[0.4] '>Password</label>
-                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] border-black border-b py-2  md:w-[500px] md:placeholder:text-[20px]' type="password" name="pass" id="pass" placeholder='********'  onChange={(e) => setPassword(e.target.value)} autocomplete="email" />
+                        <input className='outline-none bg-transparent text-[17px] placeholder:text-[black] w-[290px] border-black border-b py-2  md:w-[500px] md:placeholder:text-[20px]' type="password" name="pass" id="pass" placeholder='********'  onChange={(e) => setPassword(e.target.value)} autoComplete="email" />
                         </div>
                 </div>
        
-          <div className='flex items-center justify-center bottom-0 fixed w-full'>
+          <div className='flex items-center justify-center w-full' >
             <Link href='/login'><button type="submit" className='rounded-[30px] bg-[#FFC83A] w-[314px] h-[70px]  md:rounded-[56px] md:text-[22px] font-semibold' onClick={handleSignUp}>Sign up</button></Link>    
           </div>
         </form>
