@@ -22,15 +22,15 @@ const packard = () => {
     <div className='flex ml-6'>
     <div className='flex flex-col md:w-[50%] md:justify-center md:items-center'>
     <div className='mt-20 ml-16'>
-   <Image src={imag3} width={175} height={144} alt="pizza" placeholder='blur'/>
+   <Image src={imag3} width={175} height={144} alt="pizza" placeholder={imag3}/>
    </div>
    <div className='mt-5 ml-16' >
-   <Image src={imag2} alt="burger" placeholder='blur'/>
+   <Image src={imag2} alt="burger" placeholder={imag2}/>
    </div> 
    </div>
    <div className='flex relative md:w-[50%]'>
    <div className=' mr-6 mb-2 md:flex md:justify-end md:items-end '>
-   <Image src={imag4} alt='boy' placeholder='blur'/>
+   <Image src={imag4} alt='boy' placeholder={imag4}/>
    </div>
    {/* <div className='bg-[#EFB60E] bg-opacity-80 backdrop-filter backdrop-blur-[2px] z-10 h-[90px] w-full absolute bottom-[4px] border-black border-2'></div> */}
 

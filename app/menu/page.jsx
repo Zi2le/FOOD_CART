@@ -63,24 +63,22 @@ const menupage = () => {
    
   const menus = menu.map(menu => (
     <Link href={`productdetails/${menu.id}`}>
-     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[80%] w-[85%]'>
-      <div className='flex flex-col justify-center items-center w-[85%]'>
-      <div className='relative bottom-[50px] flex justify-center w-[80%]'>
+     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[230px] w-[200px]  flex flex-col'>
+      <div className='relative bottom-[50px] flex justify-center  w-full h-[200px] '>
         <Image src={menu.img} width={270}  height={270}
          alt='pictures of food from different sites and a little from ris'
          priority
-          className='rounded-full  border-[13px] w-[70%] h-[70%] flex-shrink-0' placeholder='blur' blurDataURL={menu.blurImage}/>
+          className='rounded-full  border-[13px]  flex-shrink-0 w-[140px] h-[140px] md:h-[240px] md:w-[220px] ' placeholder='blur' blurDataURL={menu.blurImage}/>
         </div>
-       <div className='flex flex-col justify-between h-[30%]'>
+       <div className='flex flex-col  mb-10'>
         <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{menu.name}</p>
-        <p className='text-center text-[#FFC83A] font-semiboldtext-[12px]'>{menu.price}</p>
-      </div>
+        <p className='text-center text-[#FFC83A] font-semibold text-[12px]'>{menu.price}</p>
       </div>
      </div>
      </Link>
   ))
   return (
-    <div className='min-w-[100%] relative h-screen overflow-y-hidden'> 
+    <div className='min-w-[100%] relative h-screen'> 
       <div className={`${ismenu ? ' xan ' : 'opacity-0'} h-full w-[70%]  bg-[#FFC83A] absolute top-0 z-20 flex flex-col justify-between  pl-3`} style={xan}>
         <div className='pt-10 pl-4'>
         <LuChevronLeft className={` ${ismenu ? 'close' : ''}flex-shrink-0 w-[24px] h-[24px] `} onClick={open} style={close}/>
@@ -125,7 +123,7 @@ const menupage = () => {
     <BsArrowRight className='w-[22px] flex-shrink-0' />
    </div>
     </div>
-   <div className='flex justify-between items-center px-7 h-[10%]'>
+   <div className='flex justify-between items-center px-7 h-[10%] '>
     <div>
     <RxHamburgerMenu className='w-[23.5px] h-[23.5px] md:h-[28px] md:w-[28px]' onClick={open}/> 
     </div>
@@ -144,35 +142,35 @@ const menupage = () => {
    </div>
    <div className='h-[35%] w-full '>
    <div className='flex justify-center flex-col h-[37%] px-7' >
-    <h2 className='text-4xl font-bold' style={text}>
+    <h2 className='text-4xl md:text-6xl font-bold' style={text}>
       Delicious 
     </h2>
-    <h2 className='text-4xl font-bold' style={text}> food for you</h2>
+    <h2 className='text-4xl font-bold md:text-6xl ' style={text}> food for you</h2>
    </div>
   <div className='w-full  h-[40%] flex justify-center items-center'>
-    <div className='flex w-[365px] h-[60px] bg-[#EFEEEE]  backdrop-filter backdrop:blur-xl rounded-[30px]' style={shadow}>
+    <div className='flex w-[365px] md:w-[65%] md:h-[40%] h-[60px] bg-[#EFEEEE]  backdrop-filter backdrop:blur-xl rounded-[30px]' style={shadow}>
       <div className='flex justify-center items-center w-[40%] '>
-      <div className='mr-2'>
-        <LuSearch className='h-[18px] w-[18px]  text-[#000000]'/>
+      <div className='mr-2 md:mr-5 '>
+        <LuSearch className='h-[18px] w-[18px] md:h-[25px]  md:w-[25px] text-[#000000]'/>
       </div>
      <div>
-          <p className='text-[17px] font-semibold opacity-50'>Search</p>
+          <p className='text-[17px] md:text-[23px] font-semibold opacity-50'>Search</p>
      </div>
      </div>
     </div>
   </div>
   <div className=' h-[23%] flex justify-center items-center w-full'>
-    <div className='flex space-x-16 justify-center text-[#9A9A9D] text-[15px] items-center w-full h-[60%]'>
+    <div className='flex space-x-16 justify-center text-[#9A9A9D] text-[15px] md:text-2xl  items-center w-full h-[60%]'>
    <Link href='/food'><p>Foods</p></Link>
    <Link href='/drinks'><p>Drinks</p></Link>
    <Link href='/snacks'><p>Snacks</p></Link> 
    </div>
    </div>
    </div> 
-   <div className='bg-fuchsia-950 swiper-container space-x-8  h-[45%] flex items-center overflow-x-scroll w-full'>
+   <div className=' swiper-container space-x-8  h-[45%] flex-shrink-0 w-full flex  items-center overflow-x-scroll pt-[10%]'>
    {menus}
     </div> 
-<div className='flex fixed bottom-1  w-full h-[10%] justify-center items-center'>
+<div className='flex fixed bottom-1  w-full h-[10%] justify-center items-center '>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>
