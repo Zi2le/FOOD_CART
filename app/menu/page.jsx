@@ -78,7 +78,7 @@ const menupage = () => {
      </Link>
   ))
   return (
-    <div className='min-w-[100%] relative h-screen'> 
+    <div className='min-w-[100%] relative  h-screen '> 
       <div className={`${ismenu ? ' xan ' : 'opacity-0'} h-full w-[70%]  bg-[#FFC83A] absolute top-0 z-20 flex flex-col justify-between  pl-3`} style={xan}>
         <div className='pt-10 pl-4'>
         <LuChevronLeft className={` ${ismenu ? 'close' : ''}flex-shrink-0 w-[24px] h-[24px] `} onClick={open} style={close}/>
@@ -170,7 +170,7 @@ const menupage = () => {
    <div className=' swiper-container space-x-8  h-[45%] flex-shrink-0 w-full flex  items-center overflow-x-scroll pt-[10%]'>
    {menus}
     </div> 
-<div className='flex fixed bottom-1  w-full h-[10%] justify-center items-center '>
+<div className='flex fixed bottom-1  w-full justify-center items-center'>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>
