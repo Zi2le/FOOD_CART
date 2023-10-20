@@ -78,7 +78,7 @@ const menupage = () => {
      </Link>
   ))
   return (
-    <div className='min-w-[100%] relative  h-screen '> 
+    <div className='min-w-[100%] relative  h-[90vh] '> 
       <div className={`${ismenu ? ' xan ' : 'opacity-0'} h-full w-[70%]  bg-[#FFC83A] absolute top-0 z-20 flex flex-col justify-between  pl-3`} style={xan}>
         <div className='pt-10 pl-4'>
         <LuChevronLeft className={` ${ismenu ? 'close' : ''}flex-shrink-0 w-[24px] h-[24px] `} onClick={open} style={close}/>
