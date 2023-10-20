@@ -170,7 +170,7 @@ const menupage = () => {
    <div className=' swiper-container space-x-8  h-[45%] flex-shrink-0 w-full flex  items-center overflow-x-scroll pt-[10%]'>
    {menus}
     </div> 
-<div className='flex fixed bottom-1  w-full justify-center items-center'>
+<div className='flex fixed bottom-3  w-full justify-center items-center'>
  <div className='w-[25%] flex justify-center'>
 <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
  </div>
