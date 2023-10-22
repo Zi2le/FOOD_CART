@@ -8,7 +8,7 @@ import imag4 from '../public/images/image4.png'
 
 const packard = () => {
   return (
-  <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-screen relative pt-[1.5px]  z-10'>
+  <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-[95vh] relative pt-[1.5px]  z-10'>
     <div className='flex flex-col justify-center md:items-center md:mb-16 h-[30%] '>
       <div className='ml-[14%]'>
    <Image src={imag1} alt='aptech logo ' placeholder='blur'/>
@@ -24,7 +24,7 @@ const packard = () => {
     <div className='mt-20 ml-16'>
    <Image src={imag3} width={175} height={144} alt="pizza" placeholder={imag3}/>
    </div>
-   <div className='mt-5 ml-16' >
+   <div className='ml-16' >
    <Image src={imag2} alt="burger" placeholder={imag2}/>
    </div> 
    </div>
@@ -39,8 +39,8 @@ const packard = () => {
    </div>
    </div>
   
-    <div className='fixed bottom-1 w-full  h-[20%]  flex flex-col justify-end items-center z-20'>
-    <Link href='/sign-up'> <button className='py-[20px] text-[rgb(255,199,56)] rounded-[30px] md:h-[10px] px-[100px] md:px-[200px] md:py-[40px] md:text-[24px]  text-justify bg-[#FFFFFF]'>
+    <div className='fixed bottom-0 w-full  h-[20%]  flex flex-col justify-end items-center z-20 bg-[#EFB60E]'>
+    <Link href='/sign-up'> <button className='py-[20px] text-[rgb(255,199,56)] rounded-[20px] md:h-[10px] px-[100px] md:px-[200px] md:py-[40px] md:text-[24px]  text-justify bg-[#FFFFFF]'>
       Get started
     </button> </Link>
     </div>

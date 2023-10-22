@@ -25,7 +25,7 @@ function haubmit(e){
     <div className='relative min-w-[100%] h-auto bg-[#F2F2F2]'>
         <div className=' relative  w-full rounded-b-[30px]  bg-[#FFFFFF] shadow-2xl shadow-white h-[30%] flex flex-col justify-between'>
         <div className='flex justify-center items-center'>
-                <Image src={img6} height={331} width={250} alt='aptech logo'/>
+                <Image src={img6} height={331} width={250}  alt='aptech logo'/>
         </div>
         <div className='flex  justify-evenly md:justify-evenly md:items-end'>
           <Link href='/login'><p className='  py-3 w-[100px] text-center text-lg font-semibold md:text-[25px] md:w-[200px]'>Login</p></Link> 

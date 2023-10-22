@@ -63,7 +63,7 @@ const menupage = () => {
    
   const menus = menu.map(menu => (
     <Link href={`productdetails/${menu.id}`}>
-     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[230px] w-[200px]  flex flex-col'>
+     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[230px] w-[200px]  flex flex-col md:justify-between md:h-[350px]  md:w-[300px]' key={menu.id} id={menu.id}>
       <div className='relative bottom-[50px] flex justify-center  w-full h-[200px] '>
         <Image src={menu.img} width={270}  height={270}
          alt='pictures of food from different sites and a little from ris'
@@ -71,8 +71,8 @@ const menupage = () => {
           className='rounded-full  border-[13px]  flex-shrink-0 w-[140px] h-[140px] md:h-[240px] md:w-[220px] ' placeholder='blur' blurDataURL={menu.blurImage}/>
         </div>
        <div className='flex flex-col  mb-10'>
-        <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{menu.name}</p>
-        <p className='text-center text-[#FFC83A] font-semibold text-[12px]'>{menu.price}</p>
+        <p className=' capitalize opacity-60 font-semibold  text-center text-[15px] md:text-[25px]'>{menu.name}</p>
+        <p className='text-center text-[#FFC83A] font-semibold text-[12px] md:text-[20px]'>{menu.price}</p>
       </div>
      </div>
      </Link>
@@ -142,12 +142,12 @@ const menupage = () => {
    </div>
    <div className='h-[35%] w-full '>
    <div className='flex justify-center flex-col h-[37%] px-7' >
-    <h2 className='text-4xl md:text-6xl font-bold' style={text}>
+    <h2 className='text-3xl md:text-6xl font-bold' style={text}>
       Delicious 
     </h2>
-    <h2 className='text-4xl font-bold md:text-6xl ' style={text}> food for you</h2>
+    <h2 className='text-3xl font-bold md:text-6xl ' style={text}> food for you</h2>
    </div>
-  <div className='w-full  h-[40%] flex justify-center items-center'>
+  <div className='w-full  h-[45%] flex justify-center items-center'>
     <div className='flex w-[365px] md:w-[65%] md:h-[40%] h-[60px] bg-[#EFEEEE]  backdrop-filter backdrop:blur-xl rounded-[30px]' style={shadow}>
       <div className='flex justify-center items-center w-[40%] '>
       <div className='mr-2 md:mr-5 '>
@@ -167,7 +167,7 @@ const menupage = () => {
    </div>
    </div>
    </div> 
-   <div className=' swiper-container space-x-8  h-[45%] flex-shrink-0 w-full flex  items-center overflow-x-scroll pt-[10%]'>
+   <div className=' swiper-container space-x-8  h-[50%] flex-shrink-0 w-full flex  items-center overflow-x-scroll pt-[10%]'>
    {menus}
     </div> 
 <div className='flex fixed bottom-3  w-full justify-center items-center'>

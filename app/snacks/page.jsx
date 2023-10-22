@@ -29,6 +29,9 @@ const pmenu = () => {
   const shadow = {
   boxShadow : '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
   }
+  const dow ={
+    boxShadow: '0px 6px 20px 0px rgba(215, 56, 0, 0.40)',
+  }
   const hadow = {
     boxShadow: '0px 30px 60px 0px rgba(57, 57, 57, 0.10)'
 
@@ -39,69 +42,85 @@ const pmenu = () => {
     }
   const snacks = snack.map(snack => (
     <Link href={`snackdetails/${snack.id}`}>
-    <Fragment key={snack.id}>
-     <div className='bg-[#FFF] mb-20 rounded-[30px] w-[180px] h-[200px] items flex-shrink-0 relative mt-16 swiper-slide' style={{ ...hadow, width: '235px', height: '262px' }}>
-      <div className='relative bottom-[50px] flex justify-center '>
-        <Image src={snack.img} width={130}  height={130} alt='pictures of food from different sites and a little from ris' className='rounded-full  border-[10px] h-[130px] w-[130px] md:w-[165px] md:h-[175px] ' placeholder='blur' blurDataURL={snack.blurImage}/>
+ <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[220px] w-[210px] md:h-[350px] md:w-[330px]  flex flex-col md:justify-between' key={snack.id} id={snack.id}>
+      <div className='relative bottom-[50px] flex justify-center  w-full h-[200px] '>
+        <Image src={snack.img} width={270}  height={270}
+         alt='pictures of food from different sites and a little from ris'
+         priority
+          className='rounded-full  border-[13px]  flex-shrink-0 w-[140px] h-[140px] md:h-[230px] md:w-[200px] ' placeholder='blur' blurDataURL={snack.blurImage}/>
         </div>
-       <div className='flex flex-col items-center justify-center'>
-        <p className=' capitalize opacity-90 font-semibold text-center text-[15px]'>{snack.name}</p>
-        <p className=' text-center  text-[#FFC83A] font-semiboldtext-[12px]'>{snack.price}</p>
+       <div className='flex flex-col  mb-10 '>
+        <p className=' capitalize opacity-60 font-semibold  text-center text-[12px] md:text-[20px]'>{snack.name}</p>
+        <p className='text-center text-[#FFC83A] font-semibold text-[10px] md:text-[18px]'>{snack.price}</p>
       </div>
      </div>
-    </Fragment>
     </Link>
   ))
   return (
-    <div className=' min-w-[100%] min-h-screen bg-[#F2F2F2] relative'>
-       <div className='md:min-h-[90vh]'>
-   <div>
-    <Navbar/>
-   </div>
-   <div className='mt-10 ml-14 md:mt-[80px]'>
-    <h2 className=' text-4xl font-bold' style={text}>
-      Delicious 
-    </h2>
-    <h2 className=' text-4xl font-bold' style={text}> food for you</h2>
-   </div>
-   <Link href='/search'>
-   <div className='flex justify-center md:mt-[56px]'>
-   <div className='relative flex mt-7 flex-row-reverse items-center w-[365px] h-[60px] bg-[#EFEEEE] space-x-5  backdrop-filter backdrop:blur-xl rounded-[30px]'style={shadow}>
-    <div className=' mr-[230px]'>
-    <button type="submit" className='relative border py-4 px-3 text-[17px] font-semibold opacity-50' >Search</button>
+    <div className=' min-w-[100%] h-[95vh] bg-[#F2F2F2] relative '> 
+    <div className='h-[10%]'>
+     <Navbar/>
+     {/* <RxHamburgerMenu className='relative left-14 w-[22px] h-[14.667px]'/>
+     <FiShoppingCart className='relative right-14 w-[24px] h-[24px] opacity-30'/> */}
     </div>
-    <div>
-   <LuSearch  className=' h-[18px] w-[18px]  text-[#000000] text-center'/>
+    <div className='h-[35%] w-full '>
+    <div className='flex justify-center flex-col h-[37%] px-7' >
+     <h2 className='text-3xl md:text-6xl font-bold' style={text}>
+       Delicious 
+     </h2>
+     <h2 className='text-3xl font-bold md:text-6xl ' style={text}> food for you</h2>
+    </div>
+   <div className='w-full  h-[45%] flex justify-center items-center'>
+     <div className='flex w-[365px] md:w-[65%] md:h-[40%] h-[60px] bg-[#EFEEEE]  backdrop-filter backdrop:blur-xl rounded-[30px]' style={shadow}>
+       <div className='flex justify-center items-center w-[40%] '>
+       <div className='mr-2 md:mr-5 '>
+         <LuSearch className='h-[18px] w-[18px] md:h-[25px]  md:w-[25px] text-[#000000]'/>
+       </div>
+      <div>
+           <p className='text-[17px] md:text-[23px] font-semibold opacity-50'>Search</p>
+      </div>
+      </div>
+     </div>
    </div>
-   </div>
-   </div>
-   </Link>
-   <div className='flex flex-col justify-evenly  md:h-[60vh] '>
-   <div className='flex space-x-16 mt-10  justify-center text-[#9A9A9D] text-[13px] '>
-   <Link href='/food'> <p>Foods</p></Link>
-   <Link href='/drinks'><p>Drinks</p></Link>
-<Link href='/snacks'><p className='text-[#FFC83A] cursor-pointer border-b-[2.6px] border-[#FFC83A] pb-2 w-[68px] text-center'>Snacks</p></Link> 
-   </div>
-   {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
-   <div className='swiper-container flex flex-col overflow-auto overflow-x-auto mt-6'>
-   <div className='mt-[45px] space-x-10 flex container swiper-wrapper ml-10 md:mt-[89px]'>{snacks}</div> 
-   </div>
-<div  className='mt-10 flex absolute bottom-4  w-full h-[40px]'>
+   <div className=' h-[23%] flex justify-between items-center w-full text-[#9A9A9D] text-[13px]'>
+     <div className='flex space-x-16 justify-center text-[#9A9A9D] text-[15px] md:text-2xl  items-center w-full h-[60%]'>
+     <Link href='/food'><p>Foods</p></Link>
+    <Link href='/drinks'><p className='text-[#FFC83A] cursor-pointer border-b-[2px] border-[#FFC83A] pb-2 w-[60px] text-center '>Drinks</p></Link>
+    <Link href='/snacks'><p>Snacks</p></Link> 
+    </div>
+    </div>
+    </div> 
+    
+    {/* <div className='flex space-x-16 mt-10  justify-center text-[#9A9A9D] text-[13px] w-full'>
+    <Link href='/food'><p className='text-[#FFC83A] cursor-pointer border-b-[2.4px] border-[#FFC83A] pb-2 w-[68px] text-center '>Foods</p></Link>
+    <Link href='/drinks'><p>Drinks</p></Link>
+    <Link href='/snacks'><p>Snacks</p></Link> 
+    </div> */}
+    {/* <p className=' text-end mr-10 opacity-80 '>see more</p> */}
+    <div className=' swiper-container space-x-8  h-[50%] flex-shrink-0 w-full flex  items-center overflow-x-scroll pt-[10%]'>
+    {snacks}
+     </div> 
+ <div className='flex fixed bottom-3  w-full justify-center items-center'>
   <div className='w-[25%] flex justify-center'>
-<TiHome className='w-[37px] h-[37px] text-[#FFC83A]'/>
-</div>
-<div className='w-[25%] flex justify-center'>
-<FiHeart className='w-[29px] h-[29px] opacity-30' />
-</div>
-<div className='w-[25%] flex justify-center'>
-<FiUser className='w-[29px] h-[29px] opacity-30'/>
-</div>
-<div className='w-[25%] flex justify-center'>
-<MdHistory  className='w-[38px] h-[33px] opacity-30'/>
-</div>
-</div>
-</div>
-</div> 
+ <TiHome className='w-[37px] h-[37px] text-[#FFC83A]  rounded-[20px] ' style={dow}/>
+  </div>
+ 
+   <div className='w-[25%] flex justify-center'>
+ <FiHeart className='w-[29px] h-[29px] opacity-30' />
+   </div>
+ 
+ <div className='w-[25%] flex justify-center'>
+   <Link href='/profile'>
+ <FiUser className='w-[29px] h-[29px] opacity-30'/>
+ </Link>
+ </div>
+ 
+ <div className='w-[25%] flex justify-center'>  
+ <Link href='/history'>
+ <MdHistory  className='w-[38px] h-[33px] opacity-30'/>
+ </Link>
+ </div>
+ </div>
     </div>
   )
 }

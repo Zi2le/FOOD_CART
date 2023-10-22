@@ -8,7 +8,7 @@ import {LiaCartArrowDownSolid} from 'react-icons/lia'
 import {MdOutlineLocalOffer, MdOutlineStickyNote2} from 'react-icons/md'
 import {IoShieldHalf} from 'react-icons/io5'
 import {BsArrowRight} from 'react-icons/bs'
-
+import Link from 'next/link'
 const bars = () => {
   const [ismenu, setIsmenu] = useState(false)
   const open = () => {
@@ -68,12 +68,14 @@ offer and promo
 <BsArrowRight className='w-[22px] flex-shrink-0' />
 </div>
 </div>
-<div className='flex justify-between pt-10 px-7'>
-    <RxHamburgerMenu className='w-[22px] h-[14.667px]' onClick={open}/> 
+<div className='flex justify-between pt-5 px-7 '>
+    <RxHamburgerMenu className='w-[23.5px] h-[23.5px] md:h-[28px] md:w-[28px]' onClick={open}/> 
     <div className='flex'>
+      <Link href='/cart'>
       <div>
-    <FiShoppingCart className='relative w-[24px] h-[24px] opacity-30 '/>
+    <FiShoppingCart className='relative  opacity-30 w-[23.5px] h-[23.5px] md:h-[28px] md:w-[28px] '/>
     </div>
+    </Link>
       {/* <div className=''>{cart.length}</div> */}
     </div>
    </div>
