@@ -56,7 +56,7 @@ const menudrink = () => {
     </Link>
   ))
   return (
-    <div className=' min-w-[100%] h-[95vh] bg-[#F2F2F2] relative '> 
+    <div className=' min-w-[100%] h-[90vh] bg-[#F2F2F2] relative '> 
    <div className='h-[10%]'>
     <Navbar/>
     {/* <RxHamburgerMenu className='relative left-14 w-[22px] h-[14.667px]'/>
