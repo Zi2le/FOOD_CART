@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <p className='text-[0px] lg:text-[30px] lg:flex lg:justify-center lg:font-extrabold lg:capitalize'>use a smaller screen</p>
         </div>
         <div className='overflow-x-hidden overflow-y-hidden  min-w-[360px] min-h-full sm:w-[100%] 
-        sm:h-[100%] md:w-[100%] md:h-[100%] lg:hidden 
+        sm:h-[90%] md:w-[100%] md:h-[90%] lg:hidden 
          xl:hidden 2xl:hidden'>
         {children}
         </div>
