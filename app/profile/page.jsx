@@ -59,7 +59,7 @@ boxShadow : '0px 10px 40px 0px rgba(0, 0, 0, 0.03)'
                 </div>
                 </div>
         </div>
-        <div className='flex flex-col min-h-[44vh] justify-evenly items-center '>    
+        <div className='flex flex-col min-h-[44vh] justify-evenly items-center overflow-y-scroll'>    
                 <div className=' h-[60px] bg-[#FFF] rounded-[20px] flex  justify-between items-center px-3 im w-[90%]' style={shade}>
                 <p className='text-[18px] font-semibold leading-normal'>
                 Orders

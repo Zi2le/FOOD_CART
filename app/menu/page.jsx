@@ -63,7 +63,7 @@ const menupage = () => {
    
   const menus = menu.map(menu => (
     <Link href={`productdetails/${menu.id}`}>
-     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[230px] w-[200px]  flex flex-col md:justify-between md:h-[350px]  md:w-[300px]' key={menu.id} id={menu.id}>
+     <div className='rounded-[30px]  relative  border-[#EFEEEE] border-[1.5px] bg-[#FFF] h-[230px] w-[200px]  flex flex-col md:justify-between md:h-[350px]  md:w-[300px] im' key={menu.id} id={menu.id}>
       <div className='relative bottom-[50px] flex justify-center  w-full h-[200px] '>
         <Image src={menu.img} width={270}  height={270}
          alt='pictures of food from different sites and a little from ris'
@@ -150,7 +150,7 @@ const menupage = () => {
   <div className='w-full  h-[45%] flex justify-center items-center'>
     <div className='flex w-[365px] md:w-[65%] md:h-[40%] h-[60px] bg-[#EFEEEE]  backdrop-filter backdrop:blur-xl rounded-[30px]' style={shadow}>
       <div className='flex justify-center items-center w-[40%] '>
-      <div className='mr-2 md:mr-5 '>
+      <div className='mr-2 md:mr-5'>
         <LuSearch className='h-[18px] w-[18px] md:h-[25px]  md:w-[25px] text-[#000000]'/>
       </div>
      <div>
@@ -161,9 +161,9 @@ const menupage = () => {
   </div>
   <div className=' h-[23%] flex justify-center items-center w-full'>
     <div className='flex space-x-16 justify-center text-[#9A9A9D] text-[15px] md:text-2xl  items-center w-full h-[60%]'>
-   <Link href='/food'><p>Foods</p></Link>
-   <Link href='/drinks'><p>Drinks</p></Link>
-   <Link href='/snacks'><p>Snacks</p></Link> 
+   <Link href='/food'><p className=' hover:text-orange-300'>Foods</p></Link>
+   <Link href='/drinks'><p className=' hover:text-orange-300'>Drinks</p></Link>
+   <Link href='/snacks'><p className=' hover:text-orange-300'>Snacks</p></Link> 
    </div>
    </div>
    </div> 

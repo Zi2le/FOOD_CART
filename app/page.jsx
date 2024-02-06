@@ -8,19 +8,20 @@ import imag4 from '../public/images/image4.png'
 
 const packard = () => {
   return (
-  <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-[99vh] relative pt-[1.5px]  z-10'>
-    <div className='flex flex-col justify-center md:items-center md:mb-16 h-[30%] '>
-      <div className='ml-[14%]'>
+  <div >
+    <div className='bg-[#EFB60E] flex flex-col justify-evenly min-w-[100%] h-[auto] relative  '>
+    <div className='flex flex-col justify-center md:items-center h-[40vh] '>
+      <div className='ml-[14%] h-[30vh]'>
    <Image src={imag1} alt='aptech logo '/>
    </div>
-   <div className='flex flex-col justify-center items-center -mt-8 '>
-   <h2 className='text-[60px] md:text-[90px] text-justify text-[#FFFFFF] font-extrabold'>Food for <br /> </h2>
-   <h2 className='text-[60px] md:text-[90px] text-justify text-[#FFFFFF] font-extrabold'>Everyone</h2>
+   <div className='flex flex-col justify-center items-center h-[50vh]'>
+   <h2 className='text-[40px] md:text-[80px] text-justify text-[#FFFFFF] font-extrabold'>Food for</h2>
+   <h2 className='text-[40px] md:text-[80px] text-justify text-[#FFFFFF] font-extrabold'>Everyone</h2>
    </div>
  </div>
-  <div className='relative  md:flex  h-[55%] flex flex-col justify-center md:justify-normal md:w-full'>
+  <div className='relative  md:flex  h-[54vh] flex flex-col justify-center items-center  md:w-full'>
     <div className='flex ml-6'>
-    <div className='flex flex-col md:w-[50%] md:justify-center md:items-center'>
+    <div className='flex flex-col md:w-[50vh] md:justify-center md:items-center'>
     <div className='mt-20 ml-16'>
    <Image src={imag3} width={175} height={144} alt="pizza" className='w-[175px] h-[auto]' />
    </div>
@@ -28,21 +29,23 @@ const packard = () => {
    <Image src={imag2} alt="burger"/>
    </div> 
    </div>
-   <div className='flex relative md:w-[65%]'>
-   <div className=' mr-6 mb-2 md:flex md:justify-end md:items-end '>
-   <Image src={imag4} alt='boy' />
+   <div className='flex relative md:w-[50vh]'>
+   <div className=' mr-6 mb-3 md:flex md:justify-end md:items-end '>
+   <Image src={imag4} width={175} height={204} alt='boy' className='w-[235px] h-[330px] md:w-[315px] md:h-[370px]' />
    </div>
    {/* <div className='bg-[#EFB60E] bg-opacity-80 backdrop-filter backdrop-blur-[2px] z-10 h-[90px] w-full absolute bottom-[4px] border-black border-2'></div> */}
 
-   <div className='z-10 h-[100px] w-full absolute bottom-[0px] lin-grad'></div>
+   <div className='z-10 h-[100px] w-full absolute bottom-[6px] lin-grad'></div>
    </div>
    </div>
    </div>
-  
-    <div className='flex fixed bottom-0  w-full justify-center items-center z-20 bg-[#EFB60E]'>
-    <Link href='/sign-up'> <button className='py-[10px] text-[rgb(255,199,56)] rounded-[30px] md:h-[10px] px-[800px] md:px-[200px] md:py-[40px] md:text-[24px]  text-justify bg-[#FFFFFF]'>
+   </div>
+     <div className='flex  bottom-0  w-full justify-center items-center mt-2'>
+     <Link href='/sign-up'>
+   <p className='text-[rgb(255,199,56)]  md:text-[28px] text-[20px] w-full'>
       Get started
-    </button> </Link>
+    </p> 
+    </Link>
     </div>
   </div>
   )
